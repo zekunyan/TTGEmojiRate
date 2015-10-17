@@ -1,0 +1,6 @@
+framework module TTGEmojiRate {
+  umbrella header "TTGEmojiRate-umbrella.h"
+
+  export *
+  module * { export * }
+}

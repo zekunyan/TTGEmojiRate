@@ -1,0 +1,14 @@
+PODS:
+  - TTGEmojiRate (0.1.0)
+
+DEPENDENCIES:
+  - TTGEmojiRate (from `../`)
+
+EXTERNAL SOURCES:
+  TTGEmojiRate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TTGEmojiRate: ae0c05e87007987d00a8997e39c68468f546afd4
+
+COCOAPODS: 0.39.0

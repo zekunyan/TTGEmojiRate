@@ -7,18 +7,40 @@
 //
 
 import UIKit
+import TTGEmojiRate
 
 class ViewController: UIViewController {
+    @IBOutlet weak var rateValueLabel: UILabel!
+    @IBOutlet weak var emojiRateView: EmojiRateView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
+            self.rateValueLabel.text = String(format: "%.2f / 5.0", rateValue)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Actions
+    
+    @IBAction func showEyesChanged(sender: UISwitch) {
+        emojiRateView.rateShowEyes = sender.on
     }
-
+    
+    @IBAction func showDynamicColorChanged(sender: UISwitch) {
+        emojiRateView.rateDynamicColor = sender.on
+    }
+    
+    @IBAction func rateLineWidthChanged(sender: UISlider) {
+        emojiRateView.rateLineWidth = CGFloat(sender.value)
+    }
+ 
+    @IBAction func mouthWidthChanged(sender: UISlider) {
+        emojiRateView.rateMouthWidth = CGFloat(sender.value)
+    }
+    
+    @IBAction func eyeWidthChanged(sender: UISlider) {
+        emojiRateView.rateEyeWidth = CGFloat(sender.value)
+    }
 }
 
