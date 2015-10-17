@@ -1,14 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "TTGEmojiRate"
+  s.module_name      = "TTGEmojiRate"
   s.version          = "0.1.0"
-  s.summary          = "A short description of TTGEmojiRate."
+  s.summary          = "An emoji-based rating view for iOS, implemented in Swift."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        TTGEmojiRate is an emoji-based rating view for iOS which is implemented in Swift.
+                        You can drop up and down on the Emoji face to change the rate with the color changing, which is more interactive.
+                        TTGEmojiRate is also highly customizable that many features of it can be configure, like the emoji line width and the mouth width.
                        DESC
 
   s.homepage         = "https://github.com/zekunyan/TTGEmojiRate"

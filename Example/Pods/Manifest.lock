@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TTGEmojiRate: ae0c05e87007987d00a8997e39c68468f546afd4
+  TTGEmojiRate: 05be3d0a57adad89db1e533c0a3fa4225a02d4bf
 
 COCOAPODS: 0.39.0

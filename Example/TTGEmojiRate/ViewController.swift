@@ -12,12 +12,16 @@ import TTGEmojiRate
 class ViewController: UIViewController {
     @IBOutlet weak var rateValueLabel: UILabel!
     @IBOutlet weak var emojiRateView: EmojiRateView!
+    
+    let ratingTexts = ["Very bad", "Bad", "Normal", "Good", "Very good", "Perfect"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
-            self.rateValueLabel.text = String(format: "%.2f / 5.0", rateValue)
+            self.rateValueLabel.text = String(
+                format: "%.2f / 5.0, %@",
+                rateValue, self.ratingTexts[Int(rateValue)])
         }
     }
     
