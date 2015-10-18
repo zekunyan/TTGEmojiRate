@@ -56,6 +56,14 @@ pod "TTGEmojiRate"
 ## Customization
 ![Customization](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_mark.png)
 
+#### rateValueChangeCallback
+`rateValueChangeCallback: ((newRateValue: Float) -> Void)?` defines the callback closure when `rateValue` changes.
+```Swift
+emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
+    NSLog("The new rate value is: \(rateValue)")
+}
+```
+
 ## Author
 zekunyan, zekunyan@163.com
 
