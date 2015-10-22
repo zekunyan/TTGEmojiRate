@@ -11,13 +11,19 @@ import UIKit
 
 @IBDesignable
 public class EmojiRateView: UIView {
+    /// Margin between face and view.
     private static let rateFaceMargin: CGFloat = 12
+    
+    // MARK: -
+    // MARK: Private property.
     
     private var touchPoint: CGPoint? = nil
     
-    // Public property
-    @IBInspectable
-    public var rateLineWidth: CGFloat = 14 {
+    // MARK: -
+    // MARK: Public property.
+    
+    /// Line width.
+    @IBInspectable public var rateLineWidth: CGFloat = 14 {
         didSet {
             if rateLineWidth > 20 {
                 rateLineWidth = 20
@@ -29,22 +35,22 @@ public class EmojiRateView: UIView {
         }
     }
     
-    @IBInspectable
-    public var rateColor: UIColor = UIColor.init(red: 55 / 256, green: 46 / 256, blue: 229 / 256, alpha: 1.0) {
+    /// Current line color.
+    @IBInspectable public var rateColor: UIColor = UIColor.init(red: 55 / 256, green: 46 / 256, blue: 229 / 256, alpha: 1.0) {
         didSet {
             self.setNeedsDisplay()
         }
     }
     
-    @IBInspectable
-    public var rateDynamicColor: Bool = true {
+    /// If line color changes with rateValue.
+    @IBInspectable public var rateDynamicColor: Bool = true {
         didSet {
             self.setNeedsDisplay()
         }
     }
     
-    @IBInspectable
-    public var rateMouthWidth: CGFloat = 0.6 {
+    /// Mouth width. From 0.2 to 0.7.
+    @IBInspectable public var rateMouthWidth: CGFloat = 0.6 {
         didSet {
             if rateMouthWidth > 0.7 {
                 rateMouthWidth = 0.7
@@ -56,8 +62,8 @@ public class EmojiRateView: UIView {
         }
     }
     
-    @IBInspectable
-    public var rateMouthVerticalPosition: CGFloat = 0.35 {
+    /// Mouth vertical position. From 0.1 to 0.5.
+    @IBInspectable public var rateMouthVerticalPosition: CGFloat = 0.35 {
         didSet {
             if rateMouthVerticalPosition > 0.5 {
                 rateMouthVerticalPosition = 0.5
@@ -70,15 +76,15 @@ public class EmojiRateView: UIView {
         }
     }
     
-    @IBInspectable
-    public var rateShowEyes: Bool = true {
+    /// If show eyes.
+    @IBInspectable public var rateShowEyes: Bool = true {
         didSet {
             self.setNeedsDisplay()
         }
     }
     
-    @IBInspectable
-    public var rateEyeWidth: CGFloat = 0.2 {
+    /// Eye width. From 0.1 to 0.3.
+    @IBInspectable public var rateEyeWidth: CGFloat = 0.2 {
         didSet {
             if rateEyeWidth > 0.3 {
                 rateEyeWidth = 0.3
@@ -90,8 +96,8 @@ public class EmojiRateView: UIView {
         }
     }
     
-    @IBInspectable
-    public var rateEyeVerticalPosition: CGFloat = 0.6 {
+    /// Eye vertical position. From 0.6 to 0.8.
+    @IBInspectable public var rateEyeVerticalPosition: CGFloat = 0.6 {
         didSet {
             if rateEyeVerticalPosition > 0.8 {
                 rateEyeVerticalPosition = 0.8
@@ -103,8 +109,8 @@ public class EmojiRateView: UIView {
         }
     }
     
-    @IBInspectable
-    public var rateValue: Float = 2.5 {
+    /// Rate value. From 0 to 5.
+    @IBInspectable public var rateValue: Float = 2.5 {
         didSet {
             if rateValue > 5 {
                 rateValue = 5
@@ -128,7 +134,9 @@ public class EmojiRateView: UIView {
     
     public var rateValueChangeCallback: ((newRateValue: Float) -> Void)? = nil
     
-    // Init
+    // MARK: -
+    // MARK: Public methods.
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -139,7 +147,11 @@ public class EmojiRateView: UIView {
         configure()
     }
     
-    // Draw
+    /**
+    Draw content.
+    
+    - parameter rect: frame
+    */
     public override func drawRect(rect: CGRect) {
         drawFaceWithRect(rect)
         drawMouthWithRect(rect)
@@ -147,14 +159,23 @@ public class EmojiRateView: UIView {
         drawEyeWithRect(rect, isLeftEye: false)
     }
     
-    // Init configure
+    // MARK: -
+    // MARK: Private methods.
+    
+    /**
+    Init configure.
+    */
     private func configure() {
         self.backgroundColor = UIColor.clearColor()
         self.clearsContextBeforeDrawing = true
         self.multipleTouchEnabled = false
     }
     
-    // Draw - Face
+    /**
+    Draw face.
+    
+    - parameter rect: frame
+    */
     private func drawFaceWithRect(rect: CGRect) {
         let facePath = UIBezierPath(ovalInRect: UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(EmojiRateView.rateFaceMargin, EmojiRateView.rateFaceMargin, EmojiRateView.rateFaceMargin, EmojiRateView.rateFaceMargin)))
         rateColor.setStroke()
@@ -162,7 +183,11 @@ public class EmojiRateView: UIView {
         facePath.stroke()
     }
     
-    // Draw - Mouth
+    /**
+    Draw mouth.
+    
+    - parameter rect: frame
+    */
     private func drawMouthWithRect(rect: CGRect) {
         let width = CGRectGetWidth(rect)
         let height = CGRectGetWidth(rect)
@@ -198,7 +223,12 @@ public class EmojiRateView: UIView {
         mouthPath.stroke()
     }
     
-    // Draw - Eye
+    /**
+    Draw eyes.
+    
+    - parameter rect:      frame
+    - parameter isLeftEye: if is drawing left eye
+    */
     private func drawEyeWithRect(rect: CGRect, isLeftEye: Bool) {
         if !rateShowEyes {
             return
@@ -238,7 +268,8 @@ public class EmojiRateView: UIView {
         eyePath.stroke()
     }
     
-    // Touch override
+    // MARK: Touch methods.
+    
     public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         touchPoint = touches.first?.locationInView(self)
     }
