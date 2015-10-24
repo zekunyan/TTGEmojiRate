@@ -1,25 +1,25 @@
 # TTGEmojiRate
-An emoji-based rating view for iOS, implemented in Swift. 
+An emoji-liked rating view for iOS, implemented in Swift. 
 
 [![Version](https://img.shields.io/cocoapods/v/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![License](https://img.shields.io/cocoapods/l/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![Platform](https://img.shields.io/cocoapods/p/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 
-![Screenshot](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_screenshot.gif?refresh)
+![Screenshot](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_screenshot2.gif)
 
 **Inspired by [Rating Version A - Hoang Nguyen](https://dribbble.com/shots/2211556-Rating-Version-A)**
 
 ![Rating Version A - Hoang Nguyen](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_Dribbble.gif)
 
 ## Features
-* More interactive with Emoji.
+* More interactive with Emoji and drag gesture.
 * Highly customizable.
 * Can be used in Interface Builder.
 
-![IB example](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_1.png)
+![IB example](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_IBExample.png)
 
 ## What
-TTGEmojiRate is an emoji-based rating view for iOS which is implemented in Swift.  
+TTGEmojiRate is an emoji-liked rating view for iOS which is implemented in Swift.  
 You can drop up and down on the Emoji face to change the rate, which is more interactive.  
 TTGEmojiRate is also highly customizable that many features of it can be configure, like the emoji line width and the mouth width.
 
@@ -54,7 +54,7 @@ pod "TTGEmojiRate"
 ```
 
 ## Customization
-![Customization](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_mark.png)
+![Customization](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_mark.png?refresh)
 
 #### rateValueChangeCallback
 `rateValueChangeCallback: ((newRateValue: Float) -> Void)?` defines the callback closure when `rateValue` changes.
@@ -62,6 +62,16 @@ pod "TTGEmojiRate"
 emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
     NSLog("The new rate value is: \(rateValue)")
 }
+```
+
+#### rateColorRange
+`rateColorRange: (from: UIColor, to: UIColor)`  
+When `rateValue` changes from 0 to 5, the `rateColor` will change from the `from: UIColor` to `to: UIColor`.
+```
+emojiRateView.rateColorRange = (
+    UIColor.redColor(), 
+    UIColor.greenColor()
+)
 ```
 
 ## Author

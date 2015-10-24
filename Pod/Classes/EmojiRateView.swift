@@ -14,10 +14,18 @@ public class EmojiRateView: UIView {
     /// Margin between face and view.
     private static let rateFaceMargin: CGFloat = 12
     
+    /// Rate default color for rateValue = 5
+    private static let rateLineColorBest: UIColor = UIColor.init(hue: 165 / 360, saturation: 0.8, brightness: 0.9, alpha: 1.0)
+    
+    /// Rate default color for rateValue = 0
+    private static let rateLineColorWorst: UIColor = UIColor.init(hue: 1, saturation: 0.8, brightness: 0.9, alpha: 1.0)
+    
     // MARK: -
     // MARK: Private property.
     
     private var touchPoint: CGPoint? = nil
+    private var hueFrom: CGFloat = 0, saturationFrom: CGFloat = 0, brightnessFrom: CGFloat = 0, alphaFrom: CGFloat = 0
+    private var hueDelta: CGFloat = 0, saturationDelta: CGFloat = 0, brightnessDelta: CGFloat = 0, alphaDelta: CGFloat = 0
     
     // MARK: -
     // MARK: Public property.
@@ -39,6 +47,28 @@ public class EmojiRateView: UIView {
     @IBInspectable public var rateColor: UIColor = UIColor.init(red: 55 / 256, green: 46 / 256, blue: 229 / 256, alpha: 1.0) {
         didSet {
             self.setNeedsDisplay()
+        }
+    }
+    
+    /// Color range
+    public var rateColorRange: (from: UIColor, to: UIColor) = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest) {
+        didSet {
+            // Get begin color
+            rateColorRange.from.getHue(&hueFrom, saturation: &saturationFrom, brightness: &brightnessFrom, alpha: &alphaFrom)
+            
+            // Get end color
+            var hueTo: CGFloat = 1, saturationTo: CGFloat = 1, brightnessTo: CGFloat = 1, alphaTo: CGFloat = 1
+            rateColorRange.to.getHue(&hueTo, saturation: &saturationTo, brightness: &brightnessTo, alpha: &alphaTo)
+            
+            // Update property
+            hueDelta = hueTo - hueFrom
+            saturationDelta = saturationTo - saturationFrom
+            brightnessDelta = brightnessTo - brightnessFrom
+            alphaDelta = alphaTo - alphaFrom
+            
+            // Force to refresh current color
+            let currentRateValue = rateValue
+            rateValue = currentRateValue
         }
     }
     
@@ -134,8 +164,14 @@ public class EmojiRateView: UIView {
             
             // Update color
             if rateDynamicColor {
-                let hue = 165 + 195 * (5 - rateValue) / 5
-                self.rateColor = UIColor.init(hue: CGFloat(hue / 360), saturation: 0.8, brightness: 0.9, alpha: 1)
+                let rate: CGFloat = CGFloat(rateValue / 5)
+                
+                // Calculate new color
+                self.rateColor = UIColor.init(
+                    hue: hueFrom + hueDelta * rate,
+                    saturation: saturationFrom + saturationDelta * rate,
+                    brightness: brightnessFrom + brightnessDelta * rate,
+                    alpha: alphaFrom + alphaDelta * rate)
             }
             
             // Callback
@@ -182,6 +218,7 @@ public class EmojiRateView: UIView {
         self.backgroundColor = UIColor.clearColor()
         self.clearsContextBeforeDrawing = true
         self.multipleTouchEnabled = false
+        self.rateColorRange = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest)
     }
     
     /**

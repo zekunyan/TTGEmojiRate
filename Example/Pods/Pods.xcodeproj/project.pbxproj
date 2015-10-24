@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177B8CE4B0B84EA393679B995A8D4AB0 /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F67CC3B6CDBD71CC90028E925BCD0 /* EmojiRateView.swift */; };
 		195C6D94AF830CF05CD0B51400432C4F /* Pods-TTGEmojiRate_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF52145E107DE42F9FC8D2C479115E /* Pods-TTGEmojiRate_Tests-dummy.m */; };
+		2B8B82B83623F21D2337461D5543FC07 /* TTGEmojiRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A13448034966EDFF143F8E7FA8A95 /* TTGEmojiRate-dummy.m */; };
 		3018BABFB96D90CCC261A631C7CCF27C /* Pods-TTGEmojiRate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A9139CCFA0A5346D99A9858737CEF1 /* Pods-TTGEmojiRate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FC9F105E04D0AF4252CF0C73545581A /* TTGEmojiRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A13448034966EDFF143F8E7FA8A95 /* TTGEmojiRate-dummy.m */; };
 		43EB5F35E320D4B8E662CF885FFDFD78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		5EAC369A2A920DA23E98AFDA6BB50BE0 /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0FD7D644BB858A87DD5E60FCD265D /* EmojiRateView.swift */; };
 		8B7DCB6ABA5A004EC2425848701FE04B /* Pods-TTGEmojiRate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD556CDF6469959F9357DF5EEE14270 /* Pods-TTGEmojiRate_Example-dummy.m */; };
 		9E20969267D29BE2B263F9F47E68B03A /* TTGEmojiRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 154A8CB574A8BCCDCCE9F959194DAD1F /* TTGEmojiRate.bundle */; };
 		AB106990D03550D3385FF39EB28994B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		C3DE2BACEAAA1048D541A7C06A688C02 /* Pods-TTGEmojiRate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501D278F02E2C022F6F86A14580BD673 /* Pods-TTGEmojiRate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C59598C02D79F376A99B2B6C1F88A628 /* TTGEmojiRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B4A2AE66783B5B8F05315672BBED60 /* TTGEmojiRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59598C02D79F376A99B2B6C1F88A628 /* TTGEmojiRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B2C267DD70A746E9487C5F10E58D34 /* TTGEmojiRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F236792D6143810B2306719FC09DC96C /* TTGEmojiRate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E66A464800706331B234BBD0FF1A62 /* TTGEmojiRate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2618C6509C321CA53D271AB36E47A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -47,11 +47,9 @@
 
 /* Begin PBXFileReference section */
 		08BD623F7E98576FEC68180B0A397382 /* TTGEmojiRate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGEmojiRate.xcconfig; sourceTree = "<group>"; };
-		08F0FD7D644BB858A87DD5E60FCD265D /* EmojiRateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmojiRateView.swift; sourceTree = "<group>"; };
 		154A8CB574A8BCCDCCE9F959194DAD1F /* TTGEmojiRate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTGEmojiRate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAF59684DC74A3A6FD26AC521E244D7 /* Pods-TTGEmojiRate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TTGEmojiRate_Tests.modulemap"; sourceTree = "<group>"; };
 		2DF2AE493F9760C1C0A263001314167B /* Pods_TTGEmojiRate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32B4A2AE66783B5B8F05315672BBED60 /* TTGEmojiRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTGEmojiRate.h; sourceTree = "<group>"; };
 		3A900420CFE28384C4CC69881DF940B1 /* TTGEmojiRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTGEmojiRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		456B321DCE5F18F29C160276177DA1EA /* Pods-TTGEmojiRate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -60,6 +58,7 @@
 		501D278F02E2C022F6F86A14580BD673 /* Pods-TTGEmojiRate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTGEmojiRate_Tests-umbrella.h"; sourceTree = "<group>"; };
 		57655EC607E53669DA74874608A8582F /* Pods-TTGEmojiRate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRate_Example-resources.sh"; sourceTree = "<group>"; };
 		6024E9E3C085257146607427DCC63249 /* Pods-TTGEmojiRate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		60B2C267DD70A746E9487C5F10E58D34 /* TTGEmojiRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTGEmojiRate.h; sourceTree = "<group>"; };
 		6716FD7358E9D3C1224FACBEB13496F1 /* Pods-TTGEmojiRate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGEmojiRate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7402904086E5BAA73DBA619084A86A1B /* Pods_TTGEmojiRate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7658726EC4CD5C1918C72CBADE926FD8 /* TTGEmojiRate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TTGEmojiRate.modulemap; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		E3A9139CCFA0A5346D99A9858737CEF1 /* Pods-TTGEmojiRate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTGEmojiRate_Example-umbrella.h"; sourceTree = "<group>"; };
 		E3E66A464800706331B234BBD0FF1A62 /* TTGEmojiRate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-umbrella.h"; sourceTree = "<group>"; };
 		E4DD6A2E183689BD2FCC654B7447F4F8 /* Pods-TTGEmojiRate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TTGEmojiRate_Example.modulemap"; sourceTree = "<group>"; };
+		E78F67CC3B6CDBD71CC90028E925BCD0 /* EmojiRateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmojiRateView.swift; sourceTree = "<group>"; };
 		E874DCDEE3157E5728108ECF51E481BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6B9DF9E5D5927F935E40AF68CB1EB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED7B14A971E4D66BAA1B43F4D09139B9 /* Pods-TTGEmojiRate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRate_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,14 +125,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		170BE8DA18A5FB58473F8148C37196EA /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8555CBF7796250D9F521D4AB8BAC9624 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		553D8E5820E1FC09E6C48384ED9A8626 /* Pods-TTGEmojiRate_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +157,15 @@
 			path = "Example/Pods/Target Support Files/TTGEmojiRate";
 			sourceTree = "<group>";
 		};
+		6E85CA61A209F49FCD47390620CC1FBB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E78F67CC3B6CDBD71CC90028E925BCD0 /* EmojiRateView.swift */,
+				60B2C267DD70A746E9487C5F10E58D34 /* TTGEmojiRate.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -174,15 +175,6 @@
 				8E34D7AC0A74A8E7CEC60554D6D94F02 /* Products */,
 				CE1AD484B47381FA9208EC99B298E49F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8555CBF7796250D9F521D4AB8BAC9624 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				08F0FD7D644BB858A87DD5E60FCD265D /* EmojiRateView.swift */,
-				32B4A2AE66783B5B8F05315672BBED60 /* TTGEmojiRate.h */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		8E34D7AC0A74A8E7CEC60554D6D94F02 /* Products */ = {
@@ -199,11 +191,19 @@
 		A6A39F5B926975EEABA3FBCC92548E70 /* TTGEmojiRate */ = {
 			isa = PBXGroup;
 			children = (
-				170BE8DA18A5FB58473F8148C37196EA /* Pod */,
+				B8F25B582DD9C19AC4EA125B1A860341 /* Pod */,
 				6798A3A1C54F7AC117C7BB0DD33197E2 /* Support Files */,
 			);
 			name = TTGEmojiRate;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		B8F25B582DD9C19AC4EA125B1A860341 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6E85CA61A209F49FCD47390620CC1FBB /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -284,7 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7828E99E1A878F8890C304736E60E03C /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */;
 			buildPhases = (
-				1E1580ED64F0C88AA2548CED8D1475EC /* Sources */,
+				DBCC3AFA262495A578CCBF92B11CAF61 /* Sources */,
 				BBA8FF17CE6BE7C0BE568DAEC9762C87 /* Frameworks */,
 				9069DAB29946206C10DFB7E3FD4F37BC /* Resources */,
 				1058CE4260601F93FFD7625399801661 /* Headers */,
@@ -400,15 +400,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E1580ED64F0C88AA2548CED8D1475EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EAC369A2A920DA23E98AFDA6BB50BE0 /* EmojiRateView.swift in Sources */,
-				3FC9F105E04D0AF4252CF0C73545581A /* TTGEmojiRate-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7D4B2C77DBF1EECB2778CD1896CF59CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +412,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7DCB6ABA5A004EC2425848701FE04B /* Pods-TTGEmojiRate_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBCC3AFA262495A578CCBF92B11CAF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177B8CE4B0B84EA393679B995A8D4AB0 /* EmojiRateView.swift in Sources */,
+				2B8B82B83623F21D2337461D5543FC07 /* TTGEmojiRate-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         emojiRateView.rateShowEyes = sender.on
     }
     
-    @IBAction func showDynamicColorChanged(sender: UISwitch) {
-        emojiRateView.rateDynamicColor = sender.on
+    @IBAction func makeRandomColorRange(sender: UIButton) {
+        emojiRateView.rateColorRange = (newRandomColor(), newRandomColor())
     }
     
     @IBAction func rateLineWidthChanged(sender: UISlider) {
@@ -49,6 +49,14 @@ class ViewController: UIViewController {
     
     @IBAction func eyeWidthChanged(sender: UISlider) {
         emojiRateView.rateEyeWidth = CGFloat(sender.value)
+    }
+    
+    private func newRandomColor() -> UIColor {
+        return UIColor.init(hue: newRandomNumber(), saturation: newRandomNumber(), brightness: newRandomNumber(), alpha: newRandomNumber())
+    }
+    
+    private func newRandomNumber() -> CGFloat {
+        return CGFloat(Double(arc4random()) % 1000 / 1000)
     }
 }
 
