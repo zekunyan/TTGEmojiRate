@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         emojiRateView.rateMouthWidth = CGFloat(sender.value)
     }
     
+    @IBAction func lipWidthChanged(sender: UISlider) {
+        emojiRateView.rateLipWidth = CGFloat(sender.value)
+    }
+    
     @IBAction func eyeWidthChanged(sender: UISlider) {
         emojiRateView.rateEyeWidth = CGFloat(sender.value)
     }

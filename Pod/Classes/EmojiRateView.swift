@@ -62,6 +62,19 @@ public class EmojiRateView: UIView {
         }
     }
     
+    /// Mouth lip width. From 0.2 to 0.9
+    @IBInspectable public var rateLipWidth: CGFloat = 0.7 {
+        didSet {
+            if rateLipWidth > 0.9 {
+                rateLipWidth = 0.9
+            }
+            if rateLipWidth < 0.2 {
+                rateLipWidth = 0.2
+            }
+            self.setNeedsDisplay()
+        }
+    }
+    
     /// Mouth vertical position. From 0.1 to 0.5.
     @IBInspectable public var rateMouthVerticalPosition: CGFloat = 0.35 {
         didSet {
@@ -203,6 +216,8 @@ public class EmojiRateView: UIView {
         let centerPoint = CGPointMake(
             width / 2,
             leftPoint.y + height * 0.3 * (CGFloat(rateValue) - 2.5) / 5)
+
+        let halfLipWidth = width * rateMouthWidth * rateLipWidth / 2
         
         let mouthPath = UIBezierPath()
         mouthPath.moveToPoint(leftPoint)
@@ -210,11 +225,11 @@ public class EmojiRateView: UIView {
         mouthPath.addCurveToPoint(
             centerPoint,
             controlPoint1: leftPoint,
-            controlPoint2: CGPointMake(centerPoint.x - width * 0.2, centerPoint.y))
+            controlPoint2: CGPointMake(centerPoint.x - halfLipWidth, centerPoint.y))
         
         mouthPath.addCurveToPoint(
             rightPoint,
-            controlPoint1: CGPointMake(centerPoint.x + width * 0.2, centerPoint.y),
+            controlPoint1: CGPointMake(centerPoint.x + halfLipWidth, centerPoint.y),
             controlPoint2: rightPoint)
         
         mouthPath.lineCapStyle = CGLineCap.Round;

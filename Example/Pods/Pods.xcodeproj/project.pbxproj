@@ -13,7 +13,6 @@
 		43EB5F35E320D4B8E662CF885FFDFD78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		5EAC369A2A920DA23E98AFDA6BB50BE0 /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0FD7D644BB858A87DD5E60FCD265D /* EmojiRateView.swift */; };
 		8B7DCB6ABA5A004EC2425848701FE04B /* Pods-TTGEmojiRate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD556CDF6469959F9357DF5EEE14270 /* Pods-TTGEmojiRate_Example-dummy.m */; };
-		97C1FB4633C8307FF187ECB1BECF50ED /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 18CBF21DCADD04B8D8B67B0812D87607 /* Info.plist */; };
 		9E20969267D29BE2B263F9F47E68B03A /* TTGEmojiRate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 154A8CB574A8BCCDCCE9F959194DAD1F /* TTGEmojiRate.bundle */; };
 		AB106990D03550D3385FF39EB28994B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		C3DE2BACEAAA1048D541A7C06A688C02 /* Pods-TTGEmojiRate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501D278F02E2C022F6F86A14580BD673 /* Pods-TTGEmojiRate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,7 +49,6 @@
 		08BD623F7E98576FEC68180B0A397382 /* TTGEmojiRate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGEmojiRate.xcconfig; sourceTree = "<group>"; };
 		08F0FD7D644BB858A87DD5E60FCD265D /* EmojiRateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmojiRateView.swift; sourceTree = "<group>"; };
 		154A8CB574A8BCCDCCE9F959194DAD1F /* TTGEmojiRate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTGEmojiRate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		18CBF21DCADD04B8D8B67B0812D87607 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAF59684DC74A3A6FD26AC521E244D7 /* Pods-TTGEmojiRate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TTGEmojiRate_Tests.modulemap"; sourceTree = "<group>"; };
 		2DF2AE493F9760C1C0A263001314167B /* Pods_TTGEmojiRate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B4A2AE66783B5B8F05315672BBED60 /* TTGEmojiRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTGEmojiRate.h; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				08F0FD7D644BB858A87DD5E60FCD265D /* EmojiRateView.swift */,
-				18CBF21DCADD04B8D8B67B0812D87607 /* Info.plist */,
 				32B4A2AE66783B5B8F05315672BBED60 /* TTGEmojiRate.h */,
 			);
 			path = Classes;
@@ -408,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EAC369A2A920DA23E98AFDA6BB50BE0 /* EmojiRateView.swift in Sources */,
-				97C1FB4633C8307FF187ECB1BECF50ED /* Info.plist in Sources */,
 				3FC9F105E04D0AF4252CF0C73545581A /* TTGEmojiRate-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
