@@ -74,6 +74,9 @@ emojiRateView.rateColorRange = (
 )
 ```
 
+#### rateDragSensitivity
+`rateDragSensitivity: CGFloat` defines the sensitivity when drag to change rateValue. 
+
 ## Author
 zekunyan, zekunyan@163.com
 
