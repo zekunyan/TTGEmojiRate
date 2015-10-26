@@ -181,7 +181,20 @@ public class EmojiRateView: UIView {
         }
     }
     
+    /// Callback when rateValue changes.
     public var rateValueChangeCallback: ((newRateValue: Float) -> Void)? = nil
+    
+    /// Sensitivity when drag. From 1 to 10.
+    public var rateDragSensitivity: CGFloat = 5 {
+        didSet {
+            if rateDragSensitivity > 10 {
+                rateDragSensitivity = 10
+            }
+            if rateDragSensitivity < 1 {
+                rateDragSensitivity = 1
+            }
+        }
+    }
     
     // MARK: -
     // MARK: Public methods.
@@ -329,7 +342,9 @@ public class EmojiRateView: UIView {
     public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let currentPoint = touches.first?.locationInView(self)
         // Change rate value
-        rateValue = rateValue + Float((currentPoint!.y - touchPoint!.y) / CGRectGetHeight(self.bounds) * 0.6)
+        rateValue = rateValue + Float((currentPoint!.y - touchPoint!.y) / CGRectGetHeight(self.bounds) * rateDragSensitivity)
+        // Save current point
+        touchPoint = currentPoint
     }
     
     public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
