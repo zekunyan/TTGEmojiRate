@@ -228,7 +228,6 @@ public class EmojiRateView: UIView {
     Init configure.
     */
     private func configure() {
-        self.backgroundColor = UIColor.clearColor()
         self.clearsContextBeforeDrawing = true
         self.multipleTouchEnabled = false
         self.rateColorRange = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest)
