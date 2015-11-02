@@ -11,9 +11,6 @@ import UIKit
 
 @IBDesignable
 public class EmojiRateView: UIView {
-    /// Margin between face and view.
-    private static let rateFaceMargin: CGFloat = 12
-    
     /// Rate default color for rateValue = 5
     private static let rateLineColorBest: UIColor = UIColor.init(hue: 165 / 360, saturation: 0.8, brightness: 0.9, alpha: 1.0)
     
@@ -23,6 +20,7 @@ public class EmojiRateView: UIView {
     // MARK: -
     // MARK: Private property.
     
+    private var rateFaceMargin: CGFloat = 1
     private var touchPoint: CGPoint? = nil
     private var hueFrom: CGFloat = 0, saturationFrom: CGFloat = 0, brightnessFrom: CGFloat = 0, alphaFrom: CGFloat = 0
     private var hueDelta: CGFloat = 0, saturationDelta: CGFloat = 0, brightnessDelta: CGFloat = 0, alphaDelta: CGFloat = 0
@@ -36,9 +34,10 @@ public class EmojiRateView: UIView {
             if rateLineWidth > 20 {
                 rateLineWidth = 20
             }
-            if rateLineWidth < 1 {
-                rateLineWidth = 1
+            if rateLineWidth < 0.5 {
+                rateLineWidth = 0.5
             }
+            self.rateFaceMargin = rateLineWidth / 2
             self.setNeedsDisplay()
         }
     }
@@ -239,7 +238,8 @@ public class EmojiRateView: UIView {
     - parameter rect: frame
     */
     private func drawFaceWithRect(rect: CGRect) {
-        let facePath = UIBezierPath(ovalInRect: UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(EmojiRateView.rateFaceMargin, EmojiRateView.rateFaceMargin, EmojiRateView.rateFaceMargin, EmojiRateView.rateFaceMargin)))
+        let margin = rateFaceMargin + 2
+        let facePath = UIBezierPath(ovalInRect: UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(margin, margin, margin, margin)))
         rateColor.setStroke()
         facePath.lineWidth = rateLineWidth
         facePath.stroke()
@@ -301,16 +301,16 @@ public class EmojiRateView: UIView {
         let width = CGRectGetWidth(rect)
         let height = CGRectGetWidth(rect)
         
-        let leftPoint = CGPointMake(
-            ((isLeftEye ? 0.25 : 0.75) - rateEyeWidth / 2) * width + EmojiRateView.rateFaceMargin * (isLeftEye ? 2 : -2),
-            (1 - rateEyeVerticalPosition) * height)
-        
         let centerPoint = CGPointMake(
-            (isLeftEye ? 0.25 : 0.75) * width + EmojiRateView.rateFaceMargin * (isLeftEye ? 2 : -2),
-            leftPoint.y - height * 0.1 * (CGFloat(rateValue > 2.5 ? rateValue : 2.5) - 2.5) / 5)
+            width * (isLeftEye ? 0.30 : 0.70),
+            height * (1 - rateEyeVerticalPosition) - height * 0.1 * (CGFloat(rateValue > 2.5 ? rateValue : 2.5) - 2.5) / 5)
+        
+        let leftPoint = CGPointMake(
+            centerPoint.x - rateEyeWidth / 2 * width,
+            height * (1 - rateEyeVerticalPosition))
         
         let rightPoint = CGPointMake(
-            leftPoint.x + width * rateEyeWidth,
+            centerPoint.x + rateEyeWidth / 2 * width,
             leftPoint.y)
         
         let eyePath = UIBezierPath()
