@@ -46,14 +46,20 @@ Swift.
 iOS 8 and later.
 
 ## Installation
-TTGEmojiRate is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+You can use [Cocoapods](http://cocoapods.org) to install `TTGEmojiRate` by adding it to your `Podfile`:
 
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
 
 pod "TTGEmojiRate"
+```
+
+### Carthage
+You can use [Carthage](https://github.com/Carthage/Carthage) to install `TTGEmojiRate` by adding it to your `Cartfile`:
+```
+github "zekunyan/TTGEmojiRate"
 ```
 
 ## Customization
