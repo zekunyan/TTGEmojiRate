@@ -198,13 +198,17 @@ public class EmojiRateView: UIView {
     // MARK: -
     // MARK: Public methods.
     
-    override public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        configure()
+    }
+    
+    public override func awakeFromNib() {
         configure()
     }
     
@@ -227,6 +231,7 @@ public class EmojiRateView: UIView {
     Init configure.
     */
     private func configure() {
+        self.backgroundColor = self.backgroundColor ?? UIColor.whiteColor()
         self.clearsContextBeforeDrawing = true
         self.multipleTouchEnabled = false
         self.rateColorRange = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest)
