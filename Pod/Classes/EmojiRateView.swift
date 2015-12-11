@@ -208,10 +208,6 @@ public class EmojiRateView: UIView {
         configure()
     }
     
-    public override func awakeFromNib() {
-        configure()
-    }
-    
     /**
     Draw content.
     
