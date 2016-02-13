@@ -47,7 +47,7 @@ iOS 8 and later.
 
 ## Installation
 ### CocoaPods
-You can use [Cocoapods](http://cocoapods.org) to install `TTGEmojiRate` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org) to install `TTGEmojiRate` by adding it to your `Podfile`:
 
 ```ruby
 platform :ios, '8.0'
