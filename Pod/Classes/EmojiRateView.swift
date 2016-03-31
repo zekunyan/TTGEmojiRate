@@ -20,6 +20,9 @@ public class EmojiRateView: UIView {
     // MARK: -
     // MARK: Private property.
     
+    private var shapeLayer: CAShapeLayer = CAShapeLayer.init()
+    private var shapePath: UIBezierPath = UIBezierPath.init()
+    
     private var rateFaceMargin: CGFloat = 1
     private var touchPoint: CGPoint? = nil
     private var hueFrom: CGFloat = 0, saturationFrom: CGFloat = 0, brightnessFrom: CGFloat = 0, alphaFrom: CGFloat = 0
@@ -38,14 +41,14 @@ public class EmojiRateView: UIView {
                 rateLineWidth = 0.5
             }
             self.rateFaceMargin = rateLineWidth / 2
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
     /// Current line color.
     @IBInspectable public var rateColor: UIColor = UIColor.init(red: 55 / 256, green: 46 / 256, blue: 229 / 256, alpha: 1.0) {
         didSet {
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -74,7 +77,7 @@ public class EmojiRateView: UIView {
     /// If line color changes with rateValue.
     @IBInspectable public var rateDynamicColor: Bool = true {
         didSet {
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -87,7 +90,7 @@ public class EmojiRateView: UIView {
             if rateMouthWidth < 0.2 {
                 rateMouthWidth = 0.2
             }
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -100,7 +103,7 @@ public class EmojiRateView: UIView {
             if rateLipWidth < 0.2 {
                 rateLipWidth = 0.2
             }
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -113,15 +116,14 @@ public class EmojiRateView: UIView {
             if rateMouthVerticalPosition < 0.1 {
                 rateMouthVerticalPosition = 0.1
             }
-            
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
     /// If show eyes.
     @IBInspectable public var rateShowEyes: Bool = true {
         didSet {
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -134,7 +136,7 @@ public class EmojiRateView: UIView {
             if rateEyeWidth < 0.1 {
                 rateEyeWidth = 0.1
             }
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -147,7 +149,7 @@ public class EmojiRateView: UIView {
             if rateEyeVerticalPosition < 0.6 {
                 rateEyeVerticalPosition = 0.6
             }
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -176,7 +178,7 @@ public class EmojiRateView: UIView {
             // Callback
             self.rateValueChangeCallback?(newRateValue: rateValue)
             
-            self.setNeedsDisplay()
+            redraw()
         }
     }
     
@@ -209,15 +211,11 @@ public class EmojiRateView: UIView {
     }
     
     /**
-    Draw content.
-    
-    - parameter rect: frame
-    */
-    public override func drawRect(rect: CGRect) {
-        drawFaceWithRect(rect)
-        drawMouthWithRect(rect)
-        drawEyeWithRect(rect, isLeftEye: true)
-        drawEyeWithRect(rect, isLeftEye: false)
+     Override layoutSubviews
+     */
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        redraw()
     }
     
     // MARK: -
@@ -230,28 +228,54 @@ public class EmojiRateView: UIView {
         self.backgroundColor = self.backgroundColor ?? UIColor.whiteColor()
         self.clearsContextBeforeDrawing = true
         self.multipleTouchEnabled = false
-        self.rateColorRange = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest)
+        
+        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        rateColorRange = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest)
+
+        self.layer.addSublayer(shapeLayer)
+        redraw()
     }
     
     /**
-    Draw face.
+     Redraw all lines.
+     */
+    private func redraw() {
+        shapeLayer.frame = self.bounds
+        shapeLayer.strokeColor = rateColor.CGColor;
+        shapeLayer.lineCap = "round"
+        shapeLayer.lineWidth = rateLineWidth
+        
+        shapePath.removeAllPoints()
+        shapePath.appendPath(facePathWithRect(self.bounds))
+        shapePath.appendPath(mouthPathWithRect(self.bounds))
+        shapePath.appendPath(eyePathWithRect(self.bounds, isLeftEye: true))
+        shapePath.appendPath(eyePathWithRect(self.bounds, isLeftEye: false))
+        
+        shapeLayer.path = shapePath.CGPath
+        self.setNeedsDisplay()
+    }
     
-    - parameter rect: frame
-    */
-    private func drawFaceWithRect(rect: CGRect) {
+    /**
+     Generate face UIBezierPath
+     
+     - parameter rect: rect
+     
+     - returns: face UIBezierPath
+     */
+    private func facePathWithRect(rect: CGRect) -> UIBezierPath {
         let margin = rateFaceMargin + 2
         let facePath = UIBezierPath(ovalInRect: UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(margin, margin, margin, margin)))
-        rateColor.setStroke()
-        facePath.lineWidth = rateLineWidth
-        facePath.stroke()
+        return facePath
     }
     
     /**
-    Draw mouth.
-    
-    - parameter rect: frame
-    */
-    private func drawMouthWithRect(rect: CGRect) {
+     Generate mouth UIBezierPath
+     
+     - parameter rect: rect
+     
+     - returns: mouth UIBezierPath
+     */
+    private func mouthPathWithRect(rect: CGRect) -> UIBezierPath {
         let width = CGRectGetWidth(rect)
         let height = CGRectGetWidth(rect)
         
@@ -266,7 +290,7 @@ public class EmojiRateView: UIView {
         let centerPoint = CGPointMake(
             width / 2,
             leftPoint.y + height * 0.3 * (CGFloat(rateValue) - 2.5) / 5)
-
+        
         let halfLipWidth = width * rateMouthWidth * rateLipWidth / 2
         
         let mouthPath = UIBezierPath()
@@ -282,21 +306,20 @@ public class EmojiRateView: UIView {
             controlPoint1: CGPointMake(centerPoint.x + halfLipWidth, centerPoint.y),
             controlPoint2: rightPoint)
         
-        mouthPath.lineCapStyle = CGLineCap.Round;
-        rateColor.setStroke()
-        mouthPath.lineWidth = rateLineWidth
-        mouthPath.stroke()
+        return mouthPath
     }
     
     /**
-    Draw eyes.
-    
-    - parameter rect:      frame
-    - parameter isLeftEye: if is drawing left eye
-    */
-    private func drawEyeWithRect(rect: CGRect, isLeftEye: Bool) {
+     Generate eye UIBezierPath
+     
+     - parameter rect:      rect
+     - parameter isLeftEye: is left eye
+     
+     - returns: eye UIBezierPath
+     */
+    private func eyePathWithRect(rect: CGRect, isLeftEye: Bool) -> UIBezierPath {
         if !rateShowEyes {
-            return
+            return UIBezierPath.init()
         }
         
         let width = CGRectGetWidth(rect)
@@ -327,10 +350,7 @@ public class EmojiRateView: UIView {
             controlPoint1: CGPointMake(centerPoint.x + width * 0.06, centerPoint.y),
             controlPoint2: rightPoint)
         
-        eyePath.lineCapStyle = CGLineCap.Round
-        rateColor.setStroke()
-        eyePath.lineWidth = rateLineWidth
-        eyePath.stroke()
+        return eyePath;
     }
     
     // MARK: Touch methods.
