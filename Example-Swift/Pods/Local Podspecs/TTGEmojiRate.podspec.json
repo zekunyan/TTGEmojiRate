@@ -13,16 +13,11 @@
     "git": "https://github.com/zekunyan/TTGEmojiRate.git",
     "tag": "0.1.6"
   },
-  "social_media_url": "https://twitter.com/zorro_tutuge",
+  "social_media_url": "http://tutuge.me",
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "TTGEmojiRate": [
-      "Pod/Assets/*.png"
-    ]
-  },
   "public_header_files": "Pod/Classes/**/*.h"
 }

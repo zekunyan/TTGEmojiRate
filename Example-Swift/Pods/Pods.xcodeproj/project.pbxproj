@@ -1,1804 +1,695 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>020230E5F365451EFD8A2FD4E0CD3F7F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>7828E99E1A878F8890C304736E60E03C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1E1580ED64F0C88AA2548CED8D1475EC</string>
-				<string>BBA8FF17CE6BE7C0BE568DAEC9762C87</string>
-				<string>9069DAB29946206C10DFB7E3FD4F37BC</string>
-				<string>1058CE4260601F93FFD7625399801661</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>5A21ACEF7D66344E600CE35E094E4540</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TTGEmojiRate</string>
-			<key>productName</key>
-			<string>TTGEmojiRate</string>
-			<key>productReference</key>
-			<string>3A900420CFE28384C4CC69881DF940B1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>08BD623F7E98576FEC68180B0A397382</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>TTGEmojiRate.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08F0FD7D644BB858A87DD5E60FCD265D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EmojiRateView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1058CE4260601F93FFD7625399801661</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F236792D6143810B2306719FC09DC96C</string>
-				<string>C59598C02D79F376A99B2B6C1F88A628</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>11C0698FD339171527B77EA874E427A3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>08BD623F7E98576FEC68180B0A397382</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/TTGEmojiRate/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>TTGEmojiRate</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>13ED4CE18768C16304A50097F0C5A177</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A6A39F5B926975EEABA3FBCC92548E70</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>154A8CB574A8BCCDCCE9F959194DAD1F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>TTGEmojiRate.bundle</string>
-			<key>path</key>
-			<string>TTGEmojiRate.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>170BE8DA18A5FB58473F8148C37196EA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8555CBF7796250D9F521D4AB8BAC9624</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18CBF21DCADD04B8D8B67B0812D87607</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>195C6D94AF830CF05CD0B51400432C4F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>90EF52145E107DE42F9FC8D2C479115E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1BAF59684DC74A3A6FD26AC521E244D7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E1580ED64F0C88AA2548CED8D1475EC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5EAC369A2A920DA23E98AFDA6BB50BE0</string>
-				<string>97C1FB4633C8307FF187ECB1BECF50ED</string>
-				<string>3FC9F105E04D0AF4252CF0C73545581A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2CF197B79BACA3C1C00CB417C6C48FE1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3018BABFB96D90CCC261A631C7CCF27C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
-				<string>FB45FFD90572718D82AB9092B750F0CA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2DF2AE493F9760C1C0A263001314167B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_TTGEmojiRate_Example.framework</string>
-			<key>path</key>
-			<string>Pods_TTGEmojiRate_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3018BABFB96D90CCC261A631C7CCF27C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E3A9139CCFA0A5346D99A9858737CEF1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>32B4A2AE66783B5B8F05315672BBED60</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TTGEmojiRate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>33CF2F6D6E76ACF8BE19258F02E4D914</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F2618C6509C321CA53D271AB36E47A2D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3644807C6D37123627D3EFE833DC06AA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BF3097849700A0D197E22244C315A982</string>
-				<string>AB3C18B90AC976F64B14CA79A60B48CE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3A900420CFE28384C4CC69881DF940B1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>TTGEmojiRate.framework</string>
-			<key>path</key>
-			<string>TTGEmojiRate.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3ED8BFE91E64070D3438BBDFEA76A780</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TTGEmojiRate</string>
-			<key>target</key>
-			<string>020230E5F365451EFD8A2FD4E0CD3F7F</string>
-			<key>targetProxy</key>
-			<string>B35F0EA7875DEE432C9B151E5897B929</string>
-		</dict>
-		<key>3FC9F105E04D0AF4252CF0C73545581A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>475A13448034966EDFF143F8E7FA8A95</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>43EB5F35E320D4B8E662CF885FFDFD78</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>456B321DCE5F18F29C160276177DA1EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>475A13448034966EDFF143F8E7FA8A95</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TTGEmojiRate-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4A109FF747913A9F0BABF121298FDE32</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4BB6ECF25F9B82DC973350DD2A6534E1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>4C0654192A48915DCA75D1BB2DD70941</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C3DE2BACEAAA1048D541A7C06A688C02</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>501D278F02E2C022F6F86A14580BD673</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>553D8E5820E1FC09E6C48384ED9A8626</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E874DCDEE3157E5728108ECF51E481BF</string>
-				<string>1BAF59684DC74A3A6FD26AC521E244D7</string>
-				<string>78382325D1FE4DD2B7AC0427AA875F0A</string>
-				<string>6024E9E3C085257146607427DCC63249</string>
-				<string>90EF52145E107DE42F9FC8D2C479115E</string>
-				<string>851B57B8A839EB6F598BBAC6F1B8599A</string>
-				<string>D8CAFB61261FD348C40E9F1484ECF733</string>
-				<string>501D278F02E2C022F6F86A14580BD673</string>
-				<string>AEE26A4C2BC46E0B7C182BFEC278BD1F</string>
-				<string>ED7B14A971E4D66BAA1B43F4D09139B9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-TTGEmojiRate_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-TTGEmojiRate_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>562DDB080AA216CB3271744918A0F955</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>08BD623F7E98576FEC68180B0A397382</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/TTGEmojiRate/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>TTGEmojiRate</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>57655EC607E53669DA74874608A8582F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5978FD2A635B7921B8BBB346EF056AF0</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>020230E5F365451EFD8A2FD4E0CD3F7F</string>
-			<key>remoteInfo</key>
-			<string>TTGEmojiRate</string>
-		</dict>
-		<key>5A21ACEF7D66344E600CE35E094E4540</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TTGEmojiRate-TTGEmojiRate</string>
-			<key>target</key>
-			<string>CBDF4B0D5E8662A815992392866240CD</string>
-			<key>targetProxy</key>
-			<string>C343C9B58FB4642BB79A76D68577F36B</string>
-		</dict>
-		<key>5EAC369A2A920DA23E98AFDA6BB50BE0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>08F0FD7D644BB858A87DD5E60FCD265D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6024E9E3C085257146607427DCC63249</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6487EBA71261EA077F566E1282B0103E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4A109FF747913A9F0BABF121298FDE32</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_TTGEmojiRate_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6716FD7358E9D3C1224FACBEB13496F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6798A3A1C54F7AC117C7BB0DD33197E2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CAAFF814D70F4598E2BF6C53A8429888</string>
-				<string>7658726EC4CD5C1918C72CBADE926FD8</string>
-				<string>08BD623F7E98576FEC68180B0A397382</string>
-				<string>475A13448034966EDFF143F8E7FA8A95</string>
-				<string>D200032C3865579035BC2DDDFA698101</string>
-				<string>E3E66A464800706331B234BBD0FF1A62</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/TTGEmojiRate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7402904086E5BAA73DBA619084A86A1B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_TTGEmojiRate_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_TTGEmojiRate_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7658726EC4CD5C1918C72CBADE926FD8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TTGEmojiRate.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7828E99E1A878F8890C304736E60E03C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>11C0698FD339171527B77EA874E427A3</string>
-				<string>562DDB080AA216CB3271744918A0F955</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>78382325D1FE4DD2B7AC0427AA875F0A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D4B2C77DBF1EECB2778CD1896CF59CA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>13ED4CE18768C16304A50097F0C5A177</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>8E34D7AC0A74A8E7CEC60554D6D94F02</string>
-				<string>CE1AD484B47381FA9208EC99B298E49F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>851B57B8A839EB6F598BBAC6F1B8599A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8555CBF7796250D9F521D4AB8BAC9624</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>08F0FD7D644BB858A87DD5E60FCD265D</string>
-				<string>18CBF21DCADD04B8D8B67B0812D87607</string>
-				<string>32B4A2AE66783B5B8F05315672BBED60</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8B7DCB6ABA5A004EC2425848701FE04B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DAD556CDF6469959F9357DF5EEE14270</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8E34D7AC0A74A8E7CEC60554D6D94F02</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2DF2AE493F9760C1C0A263001314167B</string>
-				<string>7402904086E5BAA73DBA619084A86A1B</string>
-				<string>154A8CB574A8BCCDCCE9F959194DAD1F</string>
-				<string>3A900420CFE28384C4CC69881DF940B1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9069DAB29946206C10DFB7E3FD4F37BC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9E20969267D29BE2B263F9F47E68B03A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>90EF52145E107DE42F9FC8D2C479115E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97C1FB4633C8307FF187ECB1BECF50ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18CBF21DCADD04B8D8B67B0812D87607</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9CFB3F1EE0E41C8085AF46B9954978BB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E2CF23BEE7B052D6241510C405D202C7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_TTGEmojiRate_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9D879F0B2BDFDBB5DC7B6CDBCB8D6F99</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>43EB5F35E320D4B8E662CF885FFDFD78</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9E20969267D29BE2B263F9F47E68B03A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>154A8CB574A8BCCDCCE9F959194DAD1F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A6A39F5B926975EEABA3FBCC92548E70</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>170BE8DA18A5FB58473F8148C37196EA</string>
-				<string>6798A3A1C54F7AC117C7BB0DD33197E2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TTGEmojiRate</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A9D9AAFD8460088842D74A19D8A62618</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6487EBA71261EA077F566E1282B0103E</string>
-				<string>9CFB3F1EE0E41C8085AF46B9954978BB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AACAC74B9E4446BBB8C51268556A96FD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AEE26A4C2BC46E0B7C182BFEC278BD1F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_TTGEmojiRate_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AB106990D03550D3385FF39EB28994B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB3C18B90AC976F64B14CA79A60B48CE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>08BD623F7E98576FEC68180B0A397382</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>TTGEmojiRate</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AEE26A4C2BC46E0B7C182BFEC278BD1F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B35F0EA7875DEE432C9B151E5897B929</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>020230E5F365451EFD8A2FD4E0CD3F7F</string>
-			<key>remoteInfo</key>
-			<string>TTGEmojiRate</string>
-		</dict>
-		<key>B81F45D63E4F77C0D8E3193711316446</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BBA8FF17CE6BE7C0BE568DAEC9762C87</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AB106990D03550D3385FF39EB28994B4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BCB0F776D2E4EC945068FDA617F3EDD1</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ED7B14A971E4D66BAA1B43F4D09139B9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_TTGEmojiRate_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BF3097849700A0D197E22244C315A982</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>08BD623F7E98576FEC68180B0A397382</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>TTGEmojiRate</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C343C9B58FB4642BB79A76D68577F36B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CBDF4B0D5E8662A815992392866240CD</string>
-			<key>remoteInfo</key>
-			<string>TTGEmojiRate-TTGEmojiRate</string>
-		</dict>
-		<key>C3DE2BACEAAA1048D541A7C06A688C02</key>
-		<dict>
-			<key>fileRef</key>
-			<string>501D278F02E2C022F6F86A14580BD673</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C59598C02D79F376A99B2B6C1F88A628</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32B4A2AE66783B5B8F05315672BBED60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CAAFF814D70F4598E2BF6C53A8429888</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBDF4B0D5E8662A815992392866240CD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3644807C6D37123627D3EFE833DC06AA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7D4B2C77DBF1EECB2778CD1896CF59CA</string>
-				<string>B81F45D63E4F77C0D8E3193711316446</string>
-				<string>4BB6ECF25F9B82DC973350DD2A6534E1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TTGEmojiRate-TTGEmojiRate</string>
-			<key>productName</key>
-			<string>TTGEmojiRate-TTGEmojiRate</string>
-			<key>productReference</key>
-			<string>154A8CB574A8BCCDCCE9F959194DAD1F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>CD2A02CC2F161E34F1FA8E5BBC465177</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8B7DCB6ABA5A004EC2425848701FE04B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CE1AD484B47381FA9208EC99B298E49F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F9FB4253889D05746FE9CA7D4BB824DF</string>
-				<string>553D8E5820E1FC09E6C48384ED9A8626</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D200032C3865579035BC2DDDFA698101</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TTGEmojiRate-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>8E34D7AC0A74A8E7CEC60554D6D94F02</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E09AE91AA5B973BC9A29A939DBB724D5</string>
-				<string>F6AA1BA4DD99FE2E709ADE41D1C2F547</string>
-				<string>020230E5F365451EFD8A2FD4E0CD3F7F</string>
-				<string>CBDF4B0D5E8662A815992392866240CD</string>
-			</array>
-		</dict>
-		<key>D4EFFB12C275E23057BBAF7A87B4D74A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D8CAFB61261FD348C40E9F1484ECF733</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DAD556CDF6469959F9357DF5EEE14270</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E09AE91AA5B973BC9A29A939DBB724D5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A9D9AAFD8460088842D74A19D8A62618</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CD2A02CC2F161E34F1FA8E5BBC465177</string>
-				<string>9D879F0B2BDFDBB5DC7B6CDBCB8D6F99</string>
-				<string>2CF197B79BACA3C1C00CB417C6C48FE1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3ED8BFE91E64070D3438BBDFEA76A780</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TTGEmojiRate_Example</string>
-			<key>productName</key>
-			<string>Pods-TTGEmojiRate_Example</string>
-			<key>productReference</key>
-			<string>2DF2AE493F9760C1C0A263001314167B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>E2CF23BEE7B052D6241510C405D202C7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3A9139CCFA0A5346D99A9858737CEF1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3E66A464800706331B234BBD0FF1A62</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TTGEmojiRate-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4DD6A2E183689BD2FCC654B7447F4F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E874DCDEE3157E5728108ECF51E481BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED6B9DF9E5D5927F935E40AF68CB1EB9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED7B14A971E4D66BAA1B43F4D09139B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-TTGEmojiRate_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDC322C117A0D76C0B6406D3A1081BF2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>AACAC74B9E4446BBB8C51268556A96FD</string>
-				<string>BCB0F776D2E4EC945068FDA617F3EDD1</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EED4F16C30847850399A804CC46C6CAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>TTGEmojiRate</string>
-			<key>target</key>
-			<string>020230E5F365451EFD8A2FD4E0CD3F7F</string>
-			<key>targetProxy</key>
-			<string>5978FD2A635B7921B8BBB346EF056AF0</string>
-		</dict>
-		<key>F236792D6143810B2306719FC09DC96C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E3E66A464800706331B234BBD0FF1A62</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F2618C6509C321CA53D271AB36E47A2D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F6AA1BA4DD99FE2E709ADE41D1C2F547</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EDC322C117A0D76C0B6406D3A1081BF2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FF0B3368A892EEFBC96E5CA48B35DAEB</string>
-				<string>33CF2F6D6E76ACF8BE19258F02E4D914</string>
-				<string>4C0654192A48915DCA75D1BB2DD70941</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>EED4F16C30847850399A804CC46C6CAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-TTGEmojiRate_Tests</string>
-			<key>productName</key>
-			<string>Pods-TTGEmojiRate_Tests</string>
-			<key>productReference</key>
-			<string>7402904086E5BAA73DBA619084A86A1B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>F9FB4253889D05746FE9CA7D4BB824DF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED6B9DF9E5D5927F935E40AF68CB1EB9</string>
-				<string>E4DD6A2E183689BD2FCC654B7447F4F8</string>
-				<string>6716FD7358E9D3C1224FACBEB13496F1</string>
-				<string>456B321DCE5F18F29C160276177DA1EA</string>
-				<string>DAD556CDF6469959F9357DF5EEE14270</string>
-				<string>D4EFFB12C275E23057BBAF7A87B4D74A</string>
-				<string>57655EC607E53669DA74874608A8582F</string>
-				<string>E3A9139CCFA0A5346D99A9858737CEF1</string>
-				<string>4A109FF747913A9F0BABF121298FDE32</string>
-				<string>E2CF23BEE7B052D6241510C405D202C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-TTGEmojiRate_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-TTGEmojiRate_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB45FFD90572718D82AB9092B750F0CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FF0B3368A892EEFBC96E5CA48B35DAEB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>195C6D94AF830CF05CD0B51400432C4F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D2D12E787C09E305FD7458E28973667 /* TTGEmojiRate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B4511CDAC0E14EE259B9065F912C4A /* TTGEmojiRate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		276D33ADCF198378FB06F9E20A144B5E /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103107A71A3180801996C1B6AD2AF29 /* EmojiRateView.swift */; };
+		40294DD23662992DDFF020BE6BC46A93 /* Pods-TTGEmojiRate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD556CDF6469959F9357DF5EEE14270 /* Pods-TTGEmojiRate_Example-dummy.m */; };
+		4156B3BB6B243CACE93B982ADA472E85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		60417C2F763F3D28B3E129A62665FC56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		92E93C24AA04160582B596DB5C371CD3 /* Pods-TTGEmojiRate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501D278F02E2C022F6F86A14580BD673 /* Pods-TTGEmojiRate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97FA50E0E2F5BD430F66BCA42AD7D81E /* Pods-TTGEmojiRate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A9139CCFA0A5346D99A9858737CEF1 /* Pods-TTGEmojiRate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B70E59584A832BB064E9E3C089437165 /* TTGEmojiRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBAA1C06C88D10BA1990D4083B1D465 /* TTGEmojiRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B96BBC62725D7945EA20A780589B6934 /* TTGEmojiRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A41BCEB978973A5C482488334B09281 /* TTGEmojiRate-dummy.m */; };
+		C817D35EF93B5C213A25CE70D97B7943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E814E4096E3440B667065BA69B8E4EBA /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = DBE75F4771783930652F7A224B72F5BE /* Info.plist */; };
+		F5D526014F15E2D52AD125DC6704726F /* Pods-TTGEmojiRate_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF52145E107DE42F9FC8D2C479115E /* Pods-TTGEmojiRate_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8F3BC343BAF03AC03EBA77E0D10E6F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53FDA99867538AEA8DE6989672623B2;
+			remoteInfo = TTGEmojiRate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CBAA1C06C88D10BA1990D4083B1D465 /* TTGEmojiRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTGEmojiRate.h; sourceTree = "<group>"; };
+		15D78E8290CF1275F2D436EBDDF6A962 /* Pods_TTGEmojiRate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BAF59684DC74A3A6FD26AC521E244D7 /* Pods-TTGEmojiRate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TTGEmojiRate_Tests.modulemap"; sourceTree = "<group>"; };
+		3D815B4F1100A99E08816A87420C4A17 /* TTGEmojiRate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGEmojiRate.xcconfig; sourceTree = "<group>"; };
+		429A964B299CD5D52498B9B73583FFAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456B321DCE5F18F29C160276177DA1EA /* Pods-TTGEmojiRate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A109FF747913A9F0BABF121298FDE32 /* Pods-TTGEmojiRate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		501D278F02E2C022F6F86A14580BD673 /* Pods-TTGEmojiRate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTGEmojiRate_Tests-umbrella.h"; sourceTree = "<group>"; };
+		57655EC607E53669DA74874608A8582F /* Pods-TTGEmojiRate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRate_Example-resources.sh"; sourceTree = "<group>"; };
+		6024E9E3C085257146607427DCC63249 /* Pods-TTGEmojiRate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		62B4511CDAC0E14EE259B9065F912C4A /* TTGEmojiRate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-umbrella.h"; sourceTree = "<group>"; };
+		6716FD7358E9D3C1224FACBEB13496F1 /* Pods-TTGEmojiRate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGEmojiRate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		78382325D1FE4DD2B7AC0427AA875F0A /* Pods-TTGEmojiRate_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGEmojiRate_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		851B57B8A839EB6F598BBAC6F1B8599A /* Pods-TTGEmojiRate_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRate_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8A41BCEB978973A5C482488334B09281 /* TTGEmojiRate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGEmojiRate-dummy.m"; sourceTree = "<group>"; };
+		8D80DD50E2535B251F9381A6C37C8845 /* TTGEmojiRate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-prefix.pch"; sourceTree = "<group>"; };
+		90EF52145E107DE42F9FC8D2C479115E /* Pods-TTGEmojiRate_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTGEmojiRate_Tests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEE26A4C2BC46E0B7C182BFEC278BD1F /* Pods-TTGEmojiRate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4EFFB12C275E23057BBAF7A87B4D74A /* Pods-TTGEmojiRate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRate_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D8CAFB61261FD348C40E9F1484ECF733 /* Pods-TTGEmojiRate_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRate_Tests-resources.sh"; sourceTree = "<group>"; };
+		DAD556CDF6469959F9357DF5EEE14270 /* Pods-TTGEmojiRate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTGEmojiRate_Example-dummy.m"; sourceTree = "<group>"; };
+		DBE75F4771783930652F7A224B72F5BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E103107A71A3180801996C1B6AD2AF29 /* EmojiRateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmojiRateView.swift; sourceTree = "<group>"; };
+		E259BB1AD5D1B23EC0A13BA130FE4BB0 /* TTGEmojiRate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TTGEmojiRate.modulemap; sourceTree = "<group>"; };
+		E2C36C21E70C46C43A18D115B8FBBD74 /* TTGEmojiRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTGEmojiRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CF23BEE7B052D6241510C405D202C7 /* Pods-TTGEmojiRate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRate_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E3A9139CCFA0A5346D99A9858737CEF1 /* Pods-TTGEmojiRate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTGEmojiRate_Example-umbrella.h"; sourceTree = "<group>"; };
+		E4DD6A2E183689BD2FCC654B7447F4F8 /* Pods-TTGEmojiRate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TTGEmojiRate_Example.modulemap"; sourceTree = "<group>"; };
+		E874DCDEE3157E5728108ECF51E481BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6B9DF9E5D5927F935E40AF68CB1EB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7B14A971E4D66BAA1B43F4D09139B9 /* Pods-TTGEmojiRate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRate_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FD3833F0727BE49D9DCCB7DCADFEC762 /* Pods_TTGEmojiRate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A59575182F1CBF2CE6202A1900A9A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60417C2F763F3D28B3E129A62665FC56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B603125BA9C99715B646A508508B3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4156B3BB6B243CACE93B982ADA472E85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45220DA4DEC0CE396BCDC14482E617B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C817D35EF93B5C213A25CE70D97B7943 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13ED4CE18768C16304A50097F0C5A177 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC7FD4D679ABDCEB55C49FC36F49D791 /* TTGEmojiRate */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		553D8E5820E1FC09E6C48384ED9A8626 /* Pods-TTGEmojiRate_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E874DCDEE3157E5728108ECF51E481BF /* Info.plist */,
+				1BAF59684DC74A3A6FD26AC521E244D7 /* Pods-TTGEmojiRate_Tests.modulemap */,
+				78382325D1FE4DD2B7AC0427AA875F0A /* Pods-TTGEmojiRate_Tests-acknowledgements.markdown */,
+				6024E9E3C085257146607427DCC63249 /* Pods-TTGEmojiRate_Tests-acknowledgements.plist */,
+				90EF52145E107DE42F9FC8D2C479115E /* Pods-TTGEmojiRate_Tests-dummy.m */,
+				851B57B8A839EB6F598BBAC6F1B8599A /* Pods-TTGEmojiRate_Tests-frameworks.sh */,
+				D8CAFB61261FD348C40E9F1484ECF733 /* Pods-TTGEmojiRate_Tests-resources.sh */,
+				501D278F02E2C022F6F86A14580BD673 /* Pods-TTGEmojiRate_Tests-umbrella.h */,
+				AEE26A4C2BC46E0B7C182BFEC278BD1F /* Pods-TTGEmojiRate_Tests.debug.xcconfig */,
+				ED7B14A971E4D66BAA1B43F4D09139B9 /* Pods-TTGEmojiRate_Tests.release.xcconfig */,
+			);
+			name = "Pods-TTGEmojiRate_Tests";
+			path = "Target Support Files/Pods-TTGEmojiRate_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				13ED4CE18768C16304A50097F0C5A177 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B28EED65459134252DD6D2C96123E9DD /* Products */,
+				CE1AD484B47381FA9208EC99B298E49F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B28EED65459134252DD6D2C96123E9DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3833F0727BE49D9DCCB7DCADFEC762 /* Pods_TTGEmojiRate_Example.framework */,
+				15D78E8290CF1275F2D436EBDDF6A962 /* Pods_TTGEmojiRate_Tests.framework */,
+				E2C36C21E70C46C43A18D115B8FBBD74 /* TTGEmojiRate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1AD484B47381FA9208EC99B298E49F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9FB4253889D05746FE9CA7D4BB824DF /* Pods-TTGEmojiRate_Example */,
+				553D8E5820E1FC09E6C48384ED9A8626 /* Pods-TTGEmojiRate_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D95E8DE4CA127830D38137FBE9DBB34A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F04BE0317810F85B96FC06B528CC74A8 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DC7FD4D679ABDCEB55C49FC36F49D791 /* TTGEmojiRate */ = {
+			isa = PBXGroup;
+			children = (
+				D95E8DE4CA127830D38137FBE9DBB34A /* Pod */,
+				FE6F9D035F4A2469015A20825F45CD1F /* Support Files */,
+			);
+			name = TTGEmojiRate;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F04BE0317810F85B96FC06B528CC74A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E103107A71A3180801996C1B6AD2AF29 /* EmojiRateView.swift */,
+				DBE75F4771783930652F7A224B72F5BE /* Info.plist */,
+				0CBAA1C06C88D10BA1990D4083B1D465 /* TTGEmojiRate.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F9FB4253889D05746FE9CA7D4BB824DF /* Pods-TTGEmojiRate_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ED6B9DF9E5D5927F935E40AF68CB1EB9 /* Info.plist */,
+				E4DD6A2E183689BD2FCC654B7447F4F8 /* Pods-TTGEmojiRate_Example.modulemap */,
+				6716FD7358E9D3C1224FACBEB13496F1 /* Pods-TTGEmojiRate_Example-acknowledgements.markdown */,
+				456B321DCE5F18F29C160276177DA1EA /* Pods-TTGEmojiRate_Example-acknowledgements.plist */,
+				DAD556CDF6469959F9357DF5EEE14270 /* Pods-TTGEmojiRate_Example-dummy.m */,
+				D4EFFB12C275E23057BBAF7A87B4D74A /* Pods-TTGEmojiRate_Example-frameworks.sh */,
+				57655EC607E53669DA74874608A8582F /* Pods-TTGEmojiRate_Example-resources.sh */,
+				E3A9139CCFA0A5346D99A9858737CEF1 /* Pods-TTGEmojiRate_Example-umbrella.h */,
+				4A109FF747913A9F0BABF121298FDE32 /* Pods-TTGEmojiRate_Example.debug.xcconfig */,
+				E2CF23BEE7B052D6241510C405D202C7 /* Pods-TTGEmojiRate_Example.release.xcconfig */,
+			);
+			name = "Pods-TTGEmojiRate_Example";
+			path = "Target Support Files/Pods-TTGEmojiRate_Example";
+			sourceTree = "<group>";
+		};
+		FE6F9D035F4A2469015A20825F45CD1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				429A964B299CD5D52498B9B73583FFAA /* Info.plist */,
+				E259BB1AD5D1B23EC0A13BA130FE4BB0 /* TTGEmojiRate.modulemap */,
+				3D815B4F1100A99E08816A87420C4A17 /* TTGEmojiRate.xcconfig */,
+				8A41BCEB978973A5C482488334B09281 /* TTGEmojiRate-dummy.m */,
+				8D80DD50E2535B251F9381A6C37C8845 /* TTGEmojiRate-prefix.pch */,
+				62B4511CDAC0E14EE259B9065F912C4A /* TTGEmojiRate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example-Swift/Pods/Target Support Files/TTGEmojiRate";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27196E54E6566179CE730EE3A403858F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FA50E0E2F5BD430F66BCA42AD7D81E /* Pods-TTGEmojiRate_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8D4C93DD7D321AC859E554C662400D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E93C24AA04160582B596DB5C371CD3 /* Pods-TTGEmojiRate_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF3DBB425A52820B5BDD266CCA6AA02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2D12E787C09E305FD7458E28973667 /* TTGEmojiRate-umbrella.h in Headers */,
+				B70E59584A832BB064E9E3C089437165 /* TTGEmojiRate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9755E730AD3ED58C8D0C1868CD38B00D /* Pods-TTGEmojiRate_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A873D221AB09918C069C711784AAC3C4 /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRate_Example" */;
+			buildPhases = (
+				29C9F6385B01B383F838C70DD9325651 /* Sources */,
+				35A59575182F1CBF2CE6202A1900A9A2 /* Frameworks */,
+				27196E54E6566179CE730EE3A403858F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3EE2F7E816727504E9C79DF904081B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-TTGEmojiRate_Example";
+			productName = "Pods-TTGEmojiRate_Example";
+			productReference = FD3833F0727BE49D9DCCB7DCADFEC762 /* Pods_TTGEmojiRate_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F02876DAEEC830FFF753E5B4398988BA /* Pods-TTGEmojiRate_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C10003AB0BA047B9022680538A49AE /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRate_Tests" */;
+			buildPhases = (
+				39913BEED3D236EECD03E4173B51577F /* Sources */,
+				5B603125BA9C99715B646A508508B3C0 /* Frameworks */,
+				3B8D4C93DD7D321AC859E554C662400D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TTGEmojiRate_Tests";
+			productName = "Pods-TTGEmojiRate_Tests";
+			productReference = 15D78E8290CF1275F2D436EBDDF6A962 /* Pods_TTGEmojiRate_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F53FDA99867538AEA8DE6989672623B2 /* TTGEmojiRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFE59596D7DF29C5B01AFB8D28CE673 /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */;
+			buildPhases = (
+				2532B69FA49A421B633D4909E0CCF113 /* Sources */,
+				E45220DA4DEC0CE396BCDC14482E617B /* Frameworks */,
+				EDF3DBB425A52820B5BDD266CCA6AA02 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTGEmojiRate;
+			productName = TTGEmojiRate;
+			productReference = E2C36C21E70C46C43A18D115B8FBBD74 /* TTGEmojiRate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B28EED65459134252DD6D2C96123E9DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9755E730AD3ED58C8D0C1868CD38B00D /* Pods-TTGEmojiRate_Example */,
+				F02876DAEEC830FFF753E5B4398988BA /* Pods-TTGEmojiRate_Tests */,
+				F53FDA99867538AEA8DE6989672623B2 /* TTGEmojiRate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2532B69FA49A421B633D4909E0CCF113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276D33ADCF198378FB06F9E20A144B5E /* EmojiRateView.swift in Sources */,
+				E814E4096E3440B667065BA69B8E4EBA /* Info.plist in Sources */,
+				B96BBC62725D7945EA20A780589B6934 /* TTGEmojiRate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C9F6385B01B383F838C70DD9325651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40294DD23662992DDFF020BE6BC46A93 /* Pods-TTGEmojiRate_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39913BEED3D236EECD03E4173B51577F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D526014F15E2D52AD125DC6704726F /* Pods-TTGEmojiRate_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3EE2F7E816727504E9C79DF904081B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTGEmojiRate;
+			target = F53FDA99867538AEA8DE6989672623B2 /* TTGEmojiRate */;
+			targetProxy = F8F3BC343BAF03AC03EBA77E0D10E6F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		016D5F3397721FCC67D6D9D7081E8405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2CF23BEE7B052D6241510C405D202C7 /* Pods-TTGEmojiRate_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRate_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TTGEmojiRate_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27FC298AF1C85E318AEB2DCD77004641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEE26A4C2BC46E0B7C182BFEC278BD1F /* Pods-TTGEmojiRate_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRate_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TTGEmojiRate_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B76EBDEFE6140E48A2C89B95B82ACAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D815B4F1100A99E08816A87420C4A17 /* TTGEmojiRate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGEmojiRate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TTGEmojiRate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6CD6AC99CBC66F4F7B02F6BADD875B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A109FF747913A9F0BABF121298FDE32 /* Pods-TTGEmojiRate_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRate_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TTGEmojiRate_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B61F432F4C08ED7DAC4165B04BA9A853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D815B4F1100A99E08816A87420C4A17 /* TTGEmojiRate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGEmojiRate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TTGEmojiRate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEC5261716869FB686FC1EDE69FA5524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7B14A971E4D66BAA1B43F4D09139B9 /* Pods-TTGEmojiRate_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRate_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TTGEmojiRate_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFE59596D7DF29C5B01AFB8D28CE673 /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B76EBDEFE6140E48A2C89B95B82ACAD /* Debug */,
+				B61F432F4C08ED7DAC4165B04BA9A853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A873D221AB09918C069C711784AAC3C4 /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRate_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CD6AC99CBC66F4F7B02F6BADD875B75 /* Debug */,
+				016D5F3397721FCC67D6D9D7081E8405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C10003AB0BA047B9022680538A49AE /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRate_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FC298AF1C85E318AEB2DCD77004641 /* Debug */,
+				FEC5261716869FB686FC1EDE69FA5524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

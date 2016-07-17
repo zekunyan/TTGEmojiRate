@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4C47DADFF96F247C18E0C8 /* Pods_TTGEmojiRate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99DDB2BFBFD1076E2CA62C7 /* Pods_TTGEmojiRate_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		9D68C4442B1720FDF11D348D /* Pods_TTGEmojiRate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D26DDA5CEB1E342E7B31DF5 /* Pods_TTGEmojiRate_Tests.framework */; };
-		DD03005D36E1035AC099768A /* Pods_TTGEmojiRate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB786C9AA10C5E711540A5E /* Pods_TTGEmojiRate_Example.framework */; };
+		F622A05EE61F646455C9317D /* Pods_TTGEmojiRate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C595C8FE570325564A769F82 /* Pods_TTGEmojiRate_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09E5E27463C987F31CBC94CC /* Pods-TTGEmojiRate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		194B61478F0333BB466C2CBE /* Pods-TTGEmojiRate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		191F5BB8788BF5CF64C54128 /* Pods-TTGEmojiRate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TTGEmojiRate_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTGEmojiRate_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +39,13 @@
 		607FACE51AFB9204008FA782 /* TTGEmojiRate_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTGEmojiRate_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6D26DDA5CEB1E342E7B31DF5 /* Pods_TTGEmojiRate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		922C8AD1832CBAAE776F815D /* Pods-TTGEmojiRate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.release.xcconfig"; sourceTree = "<group>"; };
-		ACB786C9AA10C5E711540A5E /* Pods_TTGEmojiRate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		748E9A9085E12BDC6264799D /* Pods-TTGEmojiRate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		821EA8FBD1FA79E7283858C5 /* Pods-TTGEmojiRate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A99DDB2BFBFD1076E2CA62C7 /* Pods_TTGEmojiRate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD93455B5FB08B95D6339699 /* TTGEmojiRate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TTGEmojiRate.podspec; path = ../TTGEmojiRate.podspec; sourceTree = "<group>"; };
+		C595C8FE570325564A769F82 /* Pods_TTGEmojiRate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2409A763E25772B6F5DF73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F63B7ADBA4406E712CEDF7AE /* Pods-TTGEmojiRate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E043AFCEC363DD91A220EEE4 /* Pods-TTGEmojiRate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F85EC06A45FAC6039B915BCF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD03005D36E1035AC099768A /* Pods_TTGEmojiRate_Example.framework in Frameworks */,
+				F622A05EE61F646455C9317D /* Pods_TTGEmojiRate_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D68C4442B1720FDF11D348D /* Pods_TTGEmojiRate_Tests.framework in Frameworks */,
+				3B4C47DADFF96F247C18E0C8 /* Pods_TTGEmojiRate_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +76,8 @@
 				607FACD21AFB9204008FA782 /* Example for TTGEmojiRate */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				962CE368E9D290F38B63F300 /* Pods */,
-				6F1A9996E92ABD703121792E /* Frameworks */,
+				CEAD2A7831BC0B875A8A5014 /* Pods */,
+				F42D72D2E0CC7BE9D96F8ABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,24 +139,24 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		6F1A9996E92ABD703121792E /* Frameworks */ = {
+		CEAD2A7831BC0B875A8A5014 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ACB786C9AA10C5E711540A5E /* Pods_TTGEmojiRate_Example.framework */,
-				6D26DDA5CEB1E342E7B31DF5 /* Pods_TTGEmojiRate_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		962CE368E9D290F38B63F300 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				09E5E27463C987F31CBC94CC /* Pods-TTGEmojiRate_Example.debug.xcconfig */,
-				922C8AD1832CBAAE776F815D /* Pods-TTGEmojiRate_Example.release.xcconfig */,
-				194B61478F0333BB466C2CBE /* Pods-TTGEmojiRate_Tests.debug.xcconfig */,
-				F63B7ADBA4406E712CEDF7AE /* Pods-TTGEmojiRate_Tests.release.xcconfig */,
+				748E9A9085E12BDC6264799D /* Pods-TTGEmojiRate_Example.debug.xcconfig */,
+				E043AFCEC363DD91A220EEE4 /* Pods-TTGEmojiRate_Example.release.xcconfig */,
+				821EA8FBD1FA79E7283858C5 /* Pods-TTGEmojiRate_Tests.debug.xcconfig */,
+				191F5BB8788BF5CF64C54128 /* Pods-TTGEmojiRate_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F42D72D2E0CC7BE9D96F8ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C595C8FE570325564A769F82 /* Pods_TTGEmojiRate_Example.framework */,
+				A99DDB2BFBFD1076E2CA62C7 /* Pods_TTGEmojiRate_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TTGEmojiRate_Example" */;
 			buildPhases = (
-				5E6E0FC94BBAC3A39F9CF806 /* Check Pods Manifest.lock */,
+				A6F7B4228CE97E0137C8F7D8 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				FBBCED927ECD8140FC0B46B4 /* Embed Pods Frameworks */,
-				3FFC6CDAD228C9A79FCCAB5D /* Copy Pods Resources */,
+				A5BB7E6393227A3BC3DABDB7 /* [CP] Embed Pods Frameworks */,
+				93C54B8BDBFD54BEBEF01D29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TTGEmojiRate_Tests" */;
 			buildPhases = (
-				945872684ED90F374282813C /* Check Pods Manifest.lock */,
+				5393BECBE076619EE7F8AF34 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				028BB0DA9714161AD7D65066 /* Embed Pods Frameworks */,
-				AD72FCF35D0F45DAD8033F88 /* Copy Pods Resources */,
+				A219FC7E54C180E59A3A9C95 /* [CP] Embed Pods Frameworks */,
+				CF962B90D002817589473221 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,29 +263,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		028BB0DA9714161AD7D65066 /* Embed Pods Frameworks */ = {
+		5393BECBE076619EE7F8AF34 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3FFC6CDAD228C9A79FCCAB5D /* Copy Pods Resources */ = {
+		93C54B8BDBFD54BEBEF01D29 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,64 +293,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5E6E0FC94BBAC3A39F9CF806 /* Check Pods Manifest.lock */ = {
+		A219FC7E54C180E59A3A9C95 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		945872684ED90F374282813C /* Check Pods Manifest.lock */ = {
+		A5BB7E6393227A3BC3DABDB7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AD72FCF35D0F45DAD8033F88 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBBCED927ECD8140FC0B46B4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F7B4228CE97E0137C8F7D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF962B90D002817589473221 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -488,7 +488,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09E5E27463C987F31CBC94CC /* Pods-TTGEmojiRate_Example.debug.xcconfig */;
+			baseConfigurationReference = 748E9A9085E12BDC6264799D /* Pods-TTGEmojiRate_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -503,7 +503,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 922C8AD1832CBAAE776F815D /* Pods-TTGEmojiRate_Example.release.xcconfig */;
+			baseConfigurationReference = E043AFCEC363DD91A220EEE4 /* Pods-TTGEmojiRate_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -518,7 +518,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 194B61478F0333BB466C2CBE /* Pods-TTGEmojiRate_Tests.debug.xcconfig */;
+			baseConfigurationReference = 821EA8FBD1FA79E7283858C5 /* Pods-TTGEmojiRate_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -538,7 +538,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F63B7ADBA4406E712CEDF7AE /* Pods-TTGEmojiRate_Tests.release.xcconfig */;
+			baseConfigurationReference = 191F5BB8788BF5CF64C54128 /* Pods-TTGEmojiRate_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

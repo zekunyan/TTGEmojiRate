@@ -1,13 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-target 'TTGEmojiRate_Example', :exclusive => true do
-  pod "TTGEmojiRate", :path => "../"
-end
-
-target 'TTGEmojiRate_Tests', :exclusive => true do
-  pod "TTGEmojiRate", :path => "../"
-
-  
+target 'TTGEmojiRate_Example' do
+    pod 'TTGEmojiRate', :path => '../'
+    
+    target 'TTGEmojiRate_Tests' do
+        inherit! :search_paths
+        
+    end
 end
