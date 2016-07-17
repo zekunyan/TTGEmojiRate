@@ -1,6 +1,7 @@
 # TTGEmojiRate
 An emoji-liked rating view for iOS, implemented in Swift. 
 
+[![Build Status](https://travis-ci.org/zekunyan/TTGEmojiRate.svg?branch=master)](https://travis-ci.org/zekunyan/TTGEmojiRate)
 [![Version](https://img.shields.io/cocoapods/v/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![License](https://img.shields.io/cocoapods/l/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![Platform](https://img.shields.io/cocoapods/p/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
