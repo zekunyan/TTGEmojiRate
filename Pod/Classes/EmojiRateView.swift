@@ -10,29 +10,29 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public class EmojiRateView: UIView {
+open class EmojiRateView: UIView {
     /// Rate default color for rateValue = 5
-    private static let rateLineColorBest: UIColor = UIColor.init(hue: 165 / 360, saturation: 0.8, brightness: 0.9, alpha: 1.0)
+    fileprivate static let rateLineColorBest: UIColor = UIColor.init(hue: 165 / 360, saturation: 0.8, brightness: 0.9, alpha: 1.0)
     
     /// Rate default color for rateValue = 0
-    private static let rateLineColorWorst: UIColor = UIColor.init(hue: 1, saturation: 0.8, brightness: 0.9, alpha: 1.0)
+    fileprivate static let rateLineColorWorst: UIColor = UIColor.init(hue: 1, saturation: 0.8, brightness: 0.9, alpha: 1.0)
     
     // MARK: -
     // MARK: Private property.
     
-    private var shapeLayer: CAShapeLayer = CAShapeLayer.init()
-    private var shapePath: UIBezierPath = UIBezierPath.init()
+    fileprivate var shapeLayer: CAShapeLayer = CAShapeLayer.init()
+    fileprivate var shapePath: UIBezierPath = UIBezierPath.init()
     
-    private var rateFaceMargin: CGFloat = 1
-    private var touchPoint: CGPoint? = nil
-    private var hueFrom: CGFloat = 0, saturationFrom: CGFloat = 0, brightnessFrom: CGFloat = 0, alphaFrom: CGFloat = 0
-    private var hueDelta: CGFloat = 0, saturationDelta: CGFloat = 0, brightnessDelta: CGFloat = 0, alphaDelta: CGFloat = 0
+    fileprivate var rateFaceMargin: CGFloat = 1
+    fileprivate var touchPoint: CGPoint? = nil
+    fileprivate var hueFrom: CGFloat = 0, saturationFrom: CGFloat = 0, brightnessFrom: CGFloat = 0, alphaFrom: CGFloat = 0
+    fileprivate var hueDelta: CGFloat = 0, saturationDelta: CGFloat = 0, brightnessDelta: CGFloat = 0, alphaDelta: CGFloat = 0
     
     // MARK: -
     // MARK: Public property.
     
     /// Line width.
-    @IBInspectable public var rateLineWidth: CGFloat = 14 {
+    @IBInspectable open var rateLineWidth: CGFloat = 14 {
         didSet {
             if rateLineWidth > 20 {
                 rateLineWidth = 20
@@ -46,14 +46,14 @@ public class EmojiRateView: UIView {
     }
     
     /// Current line color.
-    @IBInspectable public var rateColor: UIColor = UIColor.init(red: 55 / 256, green: 46 / 256, blue: 229 / 256, alpha: 1.0) {
+    @IBInspectable open var rateColor: UIColor = UIColor.init(red: 55 / 256, green: 46 / 256, blue: 229 / 256, alpha: 1.0) {
         didSet {
             redraw()
         }
     }
     
     /// Color range
-    public var rateColorRange: (from: UIColor, to: UIColor) = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest) {
+    open var rateColorRange: (from: UIColor, to: UIColor) = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest) {
         didSet {
             // Get begin color
             rateColorRange.from.getHue(&hueFrom, saturation: &saturationFrom, brightness: &brightnessFrom, alpha: &alphaFrom)
@@ -75,14 +75,14 @@ public class EmojiRateView: UIView {
     }
     
     /// If line color changes with rateValue.
-    @IBInspectable public var rateDynamicColor: Bool = true {
+    @IBInspectable open var rateDynamicColor: Bool = true {
         didSet {
             redraw()
         }
     }
     
     /// Mouth width. From 0.2 to 0.7.
-    @IBInspectable public var rateMouthWidth: CGFloat = 0.6 {
+    @IBInspectable open var rateMouthWidth: CGFloat = 0.6 {
         didSet {
             if rateMouthWidth > 0.7 {
                 rateMouthWidth = 0.7
@@ -95,7 +95,7 @@ public class EmojiRateView: UIView {
     }
     
     /// Mouth lip width. From 0.2 to 0.9
-    @IBInspectable public var rateLipWidth: CGFloat = 0.7 {
+    @IBInspectable open var rateLipWidth: CGFloat = 0.7 {
         didSet {
             if rateLipWidth > 0.9 {
                 rateLipWidth = 0.9
@@ -108,7 +108,7 @@ public class EmojiRateView: UIView {
     }
     
     /// Mouth vertical position. From 0.1 to 0.5.
-    @IBInspectable public var rateMouthVerticalPosition: CGFloat = 0.35 {
+    @IBInspectable open var rateMouthVerticalPosition: CGFloat = 0.35 {
         didSet {
             if rateMouthVerticalPosition > 0.5 {
                 rateMouthVerticalPosition = 0.5
@@ -121,14 +121,14 @@ public class EmojiRateView: UIView {
     }
     
     /// If show eyes.
-    @IBInspectable public var rateShowEyes: Bool = true {
+    @IBInspectable open var rateShowEyes: Bool = true {
         didSet {
             redraw()
         }
     }
     
     /// Eye width. From 0.1 to 0.3.
-    @IBInspectable public var rateEyeWidth: CGFloat = 0.2 {
+    @IBInspectable open var rateEyeWidth: CGFloat = 0.2 {
         didSet {
             if rateEyeWidth > 0.3 {
                 rateEyeWidth = 0.3
@@ -141,7 +141,7 @@ public class EmojiRateView: UIView {
     }
     
     /// Eye vertical position. From 0.6 to 0.8.
-    @IBInspectable public var rateEyeVerticalPosition: CGFloat = 0.6 {
+    @IBInspectable open var rateEyeVerticalPosition: CGFloat = 0.6 {
         didSet {
             if rateEyeVerticalPosition > 0.8 {
                 rateEyeVerticalPosition = 0.8
@@ -154,7 +154,7 @@ public class EmojiRateView: UIView {
     }
     
     /// Rate value. From 0 to 5.
-    @IBInspectable public var rateValue: Float = 2.5 {
+    @IBInspectable open var rateValue: Float = 2.5 {
         didSet {
             if rateValue > 5 {
                 rateValue = 5
@@ -176,17 +176,17 @@ public class EmojiRateView: UIView {
             }
             
             // Callback
-            self.rateValueChangeCallback?(newRateValue: rateValue)
+            self.rateValueChangeCallback?(rateValue)
             
             redraw()
         }
     }
     
     /// Callback when rateValue changes.
-    public var rateValueChangeCallback: ((newRateValue: Float) -> Void)? = nil
+    open var rateValueChangeCallback: ((_ newRateValue: Float) -> Void)? = nil
     
     /// Sensitivity when drag. From 1 to 10.
-    public var rateDragSensitivity: CGFloat = 5 {
+    open var rateDragSensitivity: CGFloat = 5 {
         didSet {
             if rateDragSensitivity > 10 {
                 rateDragSensitivity = 10
@@ -213,7 +213,7 @@ public class EmojiRateView: UIView {
     /**
      Override layoutSubviews
      */
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         redraw()
     }
@@ -224,12 +224,12 @@ public class EmojiRateView: UIView {
     /**
     Init configure.
     */
-    private func configure() {
-        self.backgroundColor = self.backgroundColor ?? UIColor.whiteColor()
+    fileprivate func configure() {
+        self.backgroundColor = self.backgroundColor ?? UIColor.white
         self.clearsContextBeforeDrawing = true
-        self.multipleTouchEnabled = false
+        self.isMultipleTouchEnabled = false
         
-        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
         rateColorRange = (EmojiRateView.rateLineColorWorst, EmojiRateView.rateLineColorBest)
 
         self.layer.addSublayer(shapeLayer)
@@ -239,19 +239,19 @@ public class EmojiRateView: UIView {
     /**
      Redraw all lines.
      */
-    private func redraw() {
+    fileprivate func redraw() {
         shapeLayer.frame = self.bounds
-        shapeLayer.strokeColor = rateColor.CGColor;
+        shapeLayer.strokeColor = rateColor.cgColor;
         shapeLayer.lineCap = "round"
         shapeLayer.lineWidth = rateLineWidth
         
         shapePath.removeAllPoints()
-        shapePath.appendPath(facePathWithRect(self.bounds))
-        shapePath.appendPath(mouthPathWithRect(self.bounds))
-        shapePath.appendPath(eyePathWithRect(self.bounds, isLeftEye: true))
-        shapePath.appendPath(eyePathWithRect(self.bounds, isLeftEye: false))
+        shapePath.append(facePathWithRect(self.bounds))
+        shapePath.append(mouthPathWithRect(self.bounds))
+        shapePath.append(eyePathWithRect(self.bounds, isLeftEye: true))
+        shapePath.append(eyePathWithRect(self.bounds, isLeftEye: false))
         
-        shapeLayer.path = shapePath.CGPath
+        shapeLayer.path = shapePath.cgPath
         self.setNeedsDisplay()
     }
     
@@ -262,9 +262,9 @@ public class EmojiRateView: UIView {
      
      - returns: face UIBezierPath
      */
-    private func facePathWithRect(rect: CGRect) -> UIBezierPath {
+    fileprivate func facePathWithRect(_ rect: CGRect) -> UIBezierPath {
         let margin = rateFaceMargin + 2
-        let facePath = UIBezierPath(ovalInRect: UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(margin, margin, margin, margin)))
+        let facePath = UIBezierPath(ovalIn: UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(margin, margin, margin, margin)))
         return facePath
     }
     
@@ -275,35 +275,35 @@ public class EmojiRateView: UIView {
      
      - returns: mouth UIBezierPath
      */
-    private func mouthPathWithRect(rect: CGRect) -> UIBezierPath {
-        let width = CGRectGetWidth(rect)
-        let height = CGRectGetWidth(rect)
+    fileprivate func mouthPathWithRect(_ rect: CGRect) -> UIBezierPath {
+        let width = rect.width
+        let height = rect.width
         
-        let leftPoint = CGPointMake(
-            width * (1 - rateMouthWidth) / 2,
-            height * (1 - rateMouthVerticalPosition))
+        let leftPoint = CGPoint(
+            x: width * (1 - rateMouthWidth) / 2,
+            y: height * (1 - rateMouthVerticalPosition))
         
-        let rightPoint = CGPointMake(
-            width - leftPoint.x,
-            leftPoint.y)
+        let rightPoint = CGPoint(
+            x: width - leftPoint.x,
+            y: leftPoint.y)
         
-        let centerPoint = CGPointMake(
-            width / 2,
-            leftPoint.y + height * 0.3 * (CGFloat(rateValue) - 2.5) / 5)
+        let centerPoint = CGPoint(
+            x: width / 2,
+            y: leftPoint.y + height * 0.3 * (CGFloat(rateValue) - 2.5) / 5)
         
         let halfLipWidth = width * rateMouthWidth * rateLipWidth / 2
         
         let mouthPath = UIBezierPath()
-        mouthPath.moveToPoint(leftPoint)
+        mouthPath.move(to: leftPoint)
         
-        mouthPath.addCurveToPoint(
-            centerPoint,
+        mouthPath.addCurve(
+            to: centerPoint,
             controlPoint1: leftPoint,
-            controlPoint2: CGPointMake(centerPoint.x - halfLipWidth, centerPoint.y))
+            controlPoint2: CGPoint(x: centerPoint.x - halfLipWidth, y: centerPoint.y))
         
-        mouthPath.addCurveToPoint(
-            rightPoint,
-            controlPoint1: CGPointMake(centerPoint.x + halfLipWidth, centerPoint.y),
+        mouthPath.addCurve(
+            to: rightPoint,
+            controlPoint1: CGPoint(x: centerPoint.x + halfLipWidth, y: centerPoint.y),
             controlPoint2: rightPoint)
         
         return mouthPath
@@ -317,37 +317,37 @@ public class EmojiRateView: UIView {
      
      - returns: eye UIBezierPath
      */
-    private func eyePathWithRect(rect: CGRect, isLeftEye: Bool) -> UIBezierPath {
+    fileprivate func eyePathWithRect(_ rect: CGRect, isLeftEye: Bool) -> UIBezierPath {
         if !rateShowEyes {
             return UIBezierPath.init()
         }
         
-        let width = CGRectGetWidth(rect)
-        let height = CGRectGetWidth(rect)
+        let width = rect.width
+        let height = rect.width
         
-        let centerPoint = CGPointMake(
-            width * (isLeftEye ? 0.30 : 0.70),
-            height * (1 - rateEyeVerticalPosition) - height * 0.1 * (CGFloat(rateValue > 2.5 ? rateValue : 2.5) - 2.5) / 5)
+        let centerPoint = CGPoint(
+            x: width * (isLeftEye ? 0.30 : 0.70),
+            y: height * (1 - rateEyeVerticalPosition) - height * 0.1 * (CGFloat(rateValue > 2.5 ? rateValue : 2.5) - 2.5) / 5)
         
-        let leftPoint = CGPointMake(
-            centerPoint.x - rateEyeWidth / 2 * width,
-            height * (1 - rateEyeVerticalPosition))
+        let leftPoint = CGPoint(
+            x: centerPoint.x - rateEyeWidth / 2 * width,
+            y: height * (1 - rateEyeVerticalPosition))
         
-        let rightPoint = CGPointMake(
-            centerPoint.x + rateEyeWidth / 2 * width,
-            leftPoint.y)
+        let rightPoint = CGPoint(
+            x: centerPoint.x + rateEyeWidth / 2 * width,
+            y: leftPoint.y)
         
         let eyePath = UIBezierPath()
-        eyePath.moveToPoint(leftPoint)
+        eyePath.move(to: leftPoint)
         
-        eyePath.addCurveToPoint(
-            centerPoint,
+        eyePath.addCurve(
+            to: centerPoint,
             controlPoint1: leftPoint,
-            controlPoint2: CGPointMake(centerPoint.x - width * 0.06, centerPoint.y))
+            controlPoint2: CGPoint(x: centerPoint.x - width * 0.06, y: centerPoint.y))
         
-        eyePath.addCurveToPoint(
-            rightPoint,
-            controlPoint1: CGPointMake(centerPoint.x + width * 0.06, centerPoint.y),
+        eyePath.addCurve(
+            to: rightPoint,
+            controlPoint1: CGPoint(x: centerPoint.x + width * 0.06, y: centerPoint.y),
             controlPoint2: rightPoint)
         
         return eyePath;
@@ -355,19 +355,19 @@ public class EmojiRateView: UIView {
     
     // MARK: Touch methods.
     
-    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        touchPoint = touches.first?.locationInView(self)
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        touchPoint = touches.first?.location(in: self)
     }
     
-    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let currentPoint = touches.first?.locationInView(self)
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let currentPoint = touches.first?.location(in: self)
         // Change rate value
-        rateValue = rateValue + Float((currentPoint!.y - touchPoint!.y) / CGRectGetHeight(self.bounds) * rateDragSensitivity)
+        rateValue = rateValue + Float((currentPoint!.y - touchPoint!.y) / self.bounds.height * rateDragSensitivity)
         // Save current point
         touchPoint = currentPoint
     }
     
-    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         touchPoint = nil
     }
 }
