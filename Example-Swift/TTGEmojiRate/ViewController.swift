@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     // Actions
     
     @IBAction func showEyesChanged(sender: UISwitch) {
-        emojiRateView.rateShowEyes = sender.on
+        emojiRateView.rateShowEyes = sender.isOn
     }
     
     @IBAction func makeRandomColorRange(sender: UIButton) {
@@ -56,7 +56,8 @@ class ViewController: UIViewController {
     }
     
     private func newRandomNumber() -> CGFloat {
-        return CGFloat(Double(arc4random()) % 1000 / 1000)
+
+        return CGFloat(Double(Int(arc4random()) % 1000) / 1000)
     }
 }
 
