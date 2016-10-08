@@ -1,12 +1,12 @@
 # TTGEmojiRate
-An emoji-liked rating view for iOS, implemented in Swift. 
+An emoji-liked rating view for iOS, implemented in **Swift3**. 
 
 [![Build Status](https://travis-ci.org/zekunyan/TTGEmojiRate.svg?branch=master)](https://travis-ci.org/zekunyan/TTGEmojiRate)
 [![Version](https://img.shields.io/cocoapods/v/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![License](https://img.shields.io/cocoapods/l/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![Platform](https://img.shields.io/cocoapods/p/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 
-![Screenshot](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_screenshot2.gif)
+![Screenshot](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_example.gif)
 
 **Inspired by [Rating Version A - Hoang Nguyen](https://dribbble.com/shots/2211556-Rating-Version-A)**
 
@@ -20,7 +20,7 @@ An emoji-liked rating view for iOS, implemented in Swift.
 * Highly customizable.
 * Can be used in Interface Builder.
 
-![IB example](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_IBExample.png)
+![IB example](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_1.png)
 
 ## What
 TTGEmojiRate is an emoji-liked rating view for iOS which is implemented in Swift.  
@@ -43,7 +43,8 @@ self.view.addSubview(rateView)
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-Swift.  
+Swift3.  
+Xcode8.  
 iOS 8 and later.
 
 ## Installation
@@ -51,9 +52,6 @@ iOS 8 and later.
 You can use [CocoaPods](http://cocoapods.org) to install `TTGEmojiRate` by adding it to your `Podfile`:
 
 ```ruby
-platform :ios, '8.0'
-use_frameworks!
-
 pod "TTGEmojiRate"
 ```
 
@@ -64,7 +62,7 @@ github "zekunyan/TTGEmojiRate"
 ```
 
 ## Customization
-![Customization](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_mark.png?refresh)
+![Customization](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_2.png)
 
 #### rateValueChangeCallback
 `rateValueChangeCallback: ((newRateValue: Float) -> Void)?` defines the callback closure when `rateValue` changes.
