@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "TTGEmojiRate"
   s.module_name      = "TTGEmojiRate"
-  s.version          = "0.1.6"
+  s.version          = "0.2.0"
   s.summary          = "An emoji-based rating view for iOS, implemented in Swift."
 
   s.description      = <<-DESC
