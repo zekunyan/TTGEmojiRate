@@ -5,6 +5,7 @@ An emoji-liked rating view for iOS, implemented in **Swift3**.
 [![Version](https://img.shields.io/cocoapods/v/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![License](https://img.shields.io/cocoapods/l/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![Platform](https://img.shields.io/cocoapods/p/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
+[![Swift3](https://img.shields.io/badge/Swift-3-orange.svg)](https://developer.apple.com/swift/)
 
 ![Screenshot](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_example.gif)
 
