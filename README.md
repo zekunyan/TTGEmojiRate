@@ -7,8 +7,8 @@ An emoji-liked rating view for iOS, implemented in **Swift3**.
 [![Platform](https://img.shields.io/cocoapods/p/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![Swift3](https://img.shields.io/badge/Swift-3-orange.svg)](https://developer.apple.com/swift/)
 
-[![Apps Using](https://img.shields.io/badge/Apps%20Using-%3E%2050-blue.svg)](https://github.com/zekunyan/TTGEmojiRate)
-[![Total Download](https://img.shields.io/badge/Total%20Download-%3E%201038-blue.svg)](https://github.com/zekunyan/TTGEmojiRate)
+[![Apps Using](https://img.shields.io/badge/Apps%20Using-%3E%2060-blue.svg)](https://github.com/zekunyan/TTGEmojiRate)
+[![Total Download](https://img.shields.io/badge/Total%20Download-%3E%201,214-blue.svg)](https://github.com/zekunyan/TTGEmojiRate)
 
 ![Screenshot](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_example.gif)
 
