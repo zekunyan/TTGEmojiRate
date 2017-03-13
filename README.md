@@ -14,7 +14,7 @@ An emoji-liked rating view for iOS, implemented in **Swift3**.
 
 **Inspired by [Rating Version A - Hoang Nguyen](https://dribbble.com/shots/2211556-Rating-Version-A)**
 
-![Rating Version A - Hoang Nguyen](http://7nj2iz.com1.z0.glb.clouddn.com/TTGEmojiRate_Dribbble.gif)
+![Rating Version A - Hoang Nguyen](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_Dribbble.gif)
 
 **Blog**  
 [土土哥的技术Blog - Swift开源项目: TTGEmojiRate的实现](http://tutuge.me/2015/10/25/ttgemojirate-lib/)
@@ -94,3 +94,5 @@ zekunyan, zekunyan@163.com
 
 ## License
 TTGEmojiRate is available under the MIT license. See the LICENSE file for more info.
+
+
