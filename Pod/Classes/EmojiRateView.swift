@@ -182,6 +182,9 @@ open class EmojiRateView: UIView {
         }
     }
     
+    /// If you are using this with a scroll view, for example, this allows the scroll view to recognize pan gestures at the same time.
+    @IBInspectable open var recognizeSimultanousGestures: Bool = false
+    
     /// Callback when rateValue changes.
     open var rateValueChangeCallback: ((_ newRateValue: Float) -> Void)? = nil
     
@@ -225,6 +228,10 @@ open class EmojiRateView: UIView {
     Init configure.
     */
     fileprivate func configure() {
+        let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction))
+        addGestureRecognizer(panRecognizer)
+        panRecognizer.delegate = self
+        
         self.backgroundColor = self.backgroundColor ?? UIColor.white
         self.clearsContextBeforeDrawing = true
         self.isMultipleTouchEnabled = false
@@ -353,21 +360,32 @@ open class EmojiRateView: UIView {
         return eyePath;
     }
     
-    // MARK: Touch methods.
+    // MARK: Handling pan gestures.
     
-    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        touchPoint = touches.first?.location(in: self)
-    }
-    
-    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let currentPoint = touches.first?.location(in: self)
-        // Change rate value
-        rateValue = rateValue + Float((currentPoint!.y - touchPoint!.y) / self.bounds.height * rateDragSensitivity)
-        // Save current point
-        touchPoint = currentPoint
-    }
-    
-    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        touchPoint = nil
+    @objc fileprivate func panGestureAction(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .began:
+            touchPoint = sender.location(in: self)
+        
+        case .changed:
+            let currentPoint = sender.location(in: self)
+            // Change rate value
+            rateValue = rateValue + Float((currentPoint.y - touchPoint!.y) / self.bounds.height * rateDragSensitivity)
+            // Save current point
+            touchPoint = currentPoint
+        
+        case .ended:
+             touchPoint = nil
+            
+        default:
+            break
+        }
     }
 }
+
+extension EmojiRateView : UIGestureRecognizerDelegate {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return recognizeSimultanousGestures
+    }
+}
+
