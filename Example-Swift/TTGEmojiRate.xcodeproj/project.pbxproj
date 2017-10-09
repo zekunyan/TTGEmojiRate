@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		83DD5FCA1F89F4BC00B23331 /* EmojiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD5FC91F89F4BC00B23331 /* EmojiVC.swift */; };
 		F622A05EE61F646455C9317D /* Pods_TTGEmojiRate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C595C8FE570325564A769F82 /* Pods_TTGEmojiRate_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		748E9A9085E12BDC6264799D /* Pods-TTGEmojiRate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Example/Pods-TTGEmojiRate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		821EA8FBD1FA79E7283858C5 /* Pods-TTGEmojiRate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTGEmojiRate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTGEmojiRate_Tests/Pods-TTGEmojiRate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		83DD5FC91F89F4BC00B23331 /* EmojiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiVC.swift; sourceTree = "<group>"; };
 		A99DDB2BFBFD1076E2CA62C7 /* Pods_TTGEmojiRate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD93455B5FB08B95D6339699 /* TTGEmojiRate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TTGEmojiRate.podspec; path = ../TTGEmojiRate.podspec; sourceTree = "<group>"; };
 		C595C8FE570325564A769F82 /* Pods_TTGEmojiRate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				83DD5FC91F89F4BC00B23331 /* EmojiVC.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -362,6 +365,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				83DD5FCA1F89F4BC00B23331 /* EmojiVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
