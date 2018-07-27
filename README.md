@@ -1,6 +1,8 @@
 # TTGEmojiRate
 An emoji-liked rating view for iOS, implemented in **Swift3**. 
 
+**Android version: [PeterSmileRate](https://github.com/SilicorniO/PeterSmileRate) by [SilicorniO](https://github.com/SilicorniO). Great work ! :)**
+
 [![Build Status](https://travis-ci.org/zekunyan/TTGEmojiRate.svg?branch=master)](https://travis-ci.org/zekunyan/TTGEmojiRate)
 [![Version](https://img.shields.io/cocoapods/v/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![License](https://img.shields.io/cocoapods/l/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
