@@ -16,8 +16,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/zekunyan/TTGEmojiRate.git", :tag => s.version.to_s }
   s.social_media_url = 'http://tutuge.me'
 
-  s.platform     = :ios, '8.0'
-  s.requires_arc = true
+  s.platform         = :ios, '16.0'
+  s.swift_version    = "5.9"
+  s.requires_arc     = true
 
   s.source_files = 'Pod/Classes/**/*'
   s.public_header_files = 'Pod/Classes/**/*.h'

@@ -15,9 +15,10 @@
   },
   "social_media_url": "http://tutuge.me",
   "platforms": {
-    "ios": "8.0"
+    "ios": "16.0"
   },
   "requires_arc": true,
+  "swift_versions": "5.9",
   "source_files": "Pod/Classes/**/*",
   "public_header_files": "Pod/Classes/**/*.h"
 }
