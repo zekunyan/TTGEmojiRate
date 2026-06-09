@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TTGEmojiRate Promo Poster</title>
+  <style>
+    :root {
+      --ink: #101828;
+      --muted: #667085;
+      --blue: #1683ff;
+      --cyan: #0fb9b1;
+      --green: #18c37e;
+      --yellow: #ffb800;
+      --pink: #ef4d7a;
+      --purple: #635bff;
+      --card: rgba(255, 255, 255, 0.86);
+      --line: rgba(16, 24, 40, 0.08);
+      --shadow: 0 28px 70px rgba(16, 24, 40, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #dce9f6;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      color: var(--ink);
+    }
+
+    .poster {
+      position: relative;
+      width: 1600px;
+      height: 900px;
+      overflow: hidden;
+      padding: 72px 80px;
+      background:
+        radial-gradient(circle at 88% 86%, rgba(15, 185, 177, 0.22), transparent 28%),
+        radial-gradient(circle at 18% 12%, rgba(22, 131, 255, 0.18), transparent 28%),
+        linear-gradient(rgba(16, 24, 40, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 24, 40, 0.035) 1px, transparent 1px),
+        linear-gradient(135deg, #eef6ff 0%, #f9fbff 54%, #e9f9f7 100%);
+      background-size: auto, auto, 40px 40px, 40px 40px, auto;
+    }
+
+    .hero {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 560px 1fr;
+      gap: 64px;
+      height: 100%;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--blue);
+      font-size: 19px;
+      font-weight: 800;
+      box-shadow: 0 10px 26px rgba(22, 131, 255, 0.12);
+    }
+
+    h1 {
+      margin: 42px 0 26px;
+      font-size: 88px;
+      line-height: 0.92;
+      letter-spacing: -5px;
+      font-weight: 950;
+    }
+
+    .subtitle {
+      margin: 0 0 44px;
+      width: 500px;
+      color: var(--muted);
+      font-size: 28px;
+      line-height: 1.25;
+      font-weight: 680;
+      letter-spacing: -0.7px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      width: 520px;
+    }
+
+    .feature-card {
+      min-height: 132px;
+      padding: 24px 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: 0 10px 28px rgba(16, 24, 40, 0.06);
+      backdrop-filter: blur(16px);
+    }
+
+    .feature-card h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      letter-spacing: -0.35px;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.26;
+      font-weight: 650;
+    }
+
+    .footer-badges {
+      position: absolute;
+      left: 80px;
+      bottom: 52px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 18px;
+      font-weight: 850;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      opacity: 0.85;
+    }
+
+    .showcase {
+      position: relative;
+      min-height: 100%;
+    }
+
+    .phone {
+      position: absolute;
+      left: 84px;
+      top: 4px;
+      width: 350px;
+      height: 720px;
+      border: 18px solid #101828;
+      border-radius: 52px;
+      background: #f7faff;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .notch {
+      position: absolute;
+      left: 110px;
+      top: 0;
+      width: 130px;
+      height: 32px;
+      background: #101828;
+      border-radius: 0 0 22px 22px;
+      z-index: 2;
+    }
+
+    .phone-inner {
+      padding: 68px 30px 28px;
+    }
+
+    .time {
+      position: absolute;
+      top: 38px;
+      left: 38px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .screen-title {
+      margin: 0 0 6px;
+      font-size: 27px;
+      line-height: 1;
+      letter-spacing: -1px;
+      font-weight: 950;
+    }
+
+    .screen-copy {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .emoji-face {
+      width: 245px;
+      height: 245px;
+      margin: 22px auto 24px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #fff 0%, #f0f6ff 100%);
+      box-shadow: inset 0 0 0 14px rgba(22, 131, 255, 0.18), 0 18px 40px rgba(22, 131, 255, 0.16);
+    }
+
+    .rate-line {
+      height: 14px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--pink), var(--yellow), var(--green));
+    }
+
+    .score-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .chip-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .chip {
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: white;
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 10px 20px rgba(16, 24, 40, 0.12);
+    }
+
+    .chip.blue { background: var(--blue); }
+    .chip.green { background: var(--green); }
+    .chip.yellow { background: var(--yellow); color: #172033; }
+    .chip.pink { background: var(--pink); }
+    .chip.purple { background: var(--purple); }
+    .chip.cyan { background: var(--cyan); }
+
+    .floating-card {
+      position: absolute;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .card-top {
+      right: 4px;
+      top: 42px;
+      width: 570px;
+      padding: 30px;
+    }
+
+    .card-mid {
+      right: 30px;
+      top: 324px;
+      width: 500px;
+      padding: 30px;
+    }
+
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .label {
+      display: inline-flex;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #eaf4ff;
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .floating-card h2 {
+      margin: 0 0 20px;
+      font-size: 36px;
+      line-height: 0.98;
+      letter-spacing: -1.8px;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .mini-box {
+      min-height: 104px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #f8fbff;
+    }
+
+    .mini-box strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #344054;
+    }
+
+    .mini-score {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: white;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .dark-panel {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 610px;
+      padding: 26px 30px;
+      border-radius: 24px;
+      color: #fff;
+      background: #152037;
+      box-shadow: var(--shadow);
+    }
+
+    .dark-panel h3 {
+      margin: 0 0 16px;
+      font-size: 22px;
+      letter-spacing: -0.4px;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pipe-step {
+      min-height: 54px;
+      padding: 10px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.09);
+      font-size: 12px;
+      font-weight: 850;
+      text-align: center;
+      display: grid;
+      place-items: center;
+    }
+
+    .arrow {
+      color: var(--cyan);
+      font-weight: 950;
+      text-align: center;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(2px);
+      opacity: 0.7;
+    }
+
+    .orb.one {
+      width: 220px;
+      height: 220px;
+      right: -50px;
+      top: -45px;
+      background: rgba(22, 131, 255, 0.13);
+    }
+
+    .orb.two {
+      width: 180px;
+      height: 180px;
+      left: 560px;
+      bottom: 34px;
+      background: rgba(24, 195, 126, 0.16);
+    }
+  </style>
+</head>
+<body>
+  <main class="poster" aria-label="TTGEmojiRate promotional poster">
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Swift 5.9 · iOS 16 · UIKit rating UI</div>
+        <h1>TTGEmoji<br />Rate</h1>
+        <p class="subtitle">A delightful emoji-based rating control with expressive paths, dynamic color, tap & drag interactions, and Objective-C friendly APIs.</p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Emoji-first rating</h3>
+            <p>Turn simple scores into expressive face feedback powered by CAShapeLayer paths.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Flexible scale</h3>
+            <p>Use 0-5, 1-10, NPS, half steps, whole-number surveys, or continuous values.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Tap, drag, or display</h3>
+            <p>Support interactive tap-to-rate, vertical drag gestures, and read-only result cards.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Swift & ObjC ready</h3>
+            <p>Drop into Swift apps, Interface Builder screens, or Objective-C projects.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="showcase">
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="time">9:41</div>
+          <div class="phone-inner">
+            <h2 class="screen-title">How was it?</h2>
+            <p class="screen-copy">Drag vertically or tap the emoji to set a stepped 10-point rating.</p>
+            <div class="emoji-face">
+              <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="94" cy="94" r="76" stroke="url(#faceGradient)" stroke-width="13" />
+                <path d="M54 72C63 60 76 60 84 72" stroke="#1683FF" stroke-width="11" stroke-linecap="round" />
+                <path d="M104 72C113 60 126 60 134 72" stroke="#1683FF" stroke-width="11" stroke-linecap="round" />
+                <path d="M48 116C72 148 116 148 140 116" stroke="#18C37E" stroke-width="13" stroke-linecap="round" />
+                <defs>
+                  <linearGradient id="faceGradient" x1="22" y1="36" x2="164" y2="154" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EF4D7A" />
+                    <stop offset="0.48" stop-color="#FFB800" />
+                    <stop offset="1" stop-color="#18C37E" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="rate-line"></div>
+            <div class="score-row"><span>1</span><span>6.5 / 10</span><span>10</span></div>
+            <div class="chip-wrap">
+              <span class="chip blue">Tap-to-rate</span>
+              <span class="chip green">Step 0.5</span>
+              <span class="chip yellow">Animated</span>
+              <span class="chip pink">Read-only</span>
+              <span class="chip purple">IBDesignable</span>
+              <span class="chip cyan">Dynamic color</span>
+            </div>
+          </div>
+        </div>
+
+        <article class="floating-card card-top">
+          <div class="card-title-row">
+            <h2>One control for real rating scenarios.</h2>
+            <span class="label">Configurable</span>
+          </div>
+          <div class="mini-grid">
+            <div class="mini-box">
+              <strong>5-star UX</strong>
+              <div class="mini-score">
+                <span class="pill" style="background: var(--pink)">0</span>
+                <span class="pill" style="background: var(--yellow); color:#172033">2.5</span>
+                <span class="pill" style="background: var(--green)">5</span>
+              </div>
+            </div>
+            <div class="mini-box">
+              <strong>Survey score</strong>
+              <div class="mini-score">
+                <span class="pill" style="background: var(--blue)">1</span>
+                <span class="pill" style="background: var(--purple)">5</span>
+                <span class="pill" style="background: var(--green)">10</span>
+              </div>
+            </div>
+            <div class="mini-box">
+              <strong>NPS ready</strong>
+              <div class="mini-score">
+                <span class="pill" style="background: var(--pink)">Detractor</span>
+                <span class="pill" style="background: var(--yellow); color:#172033">Pass</span>
+                <span class="pill" style="background: var(--green)">Love</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="floating-card card-mid">
+          <div class="card-title-row">
+            <h2>Customize every expression detail.</h2>
+            <span class="label">UIKit native</span>
+          </div>
+          <div class="mini-grid">
+            <div class="mini-box"><strong>Line width</strong><span class="chip blue">0.5...20</span></div>
+            <div class="mini-box"><strong>Mouth</strong><span class="chip green">width · lip · curve</span></div>
+            <div class="mini-box"><strong>Eyes</strong><span class="chip purple">show · size · position</span></div>
+          </div>
+        </article>
+
+        <section class="dark-panel">
+          <h3>Interaction pipeline designed for smooth feedback</h3>
+          <div class="pipeline">
+            <div class="pipe-step">Tap / Pan</div>
+            <div class="arrow">→</div>
+            <div class="pipe-step">Clamp + Step</div>
+            <div class="arrow">→</div>
+            <div class="pipe-step">Path + Color</div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="footer-badges">
+      <span>Swift 5.9</span><span class="dot"></span><span>CocoaPods</span><span class="dot"></span><span>Objective-C Compatible</span>
+    </div>
+  </main>
+</body>
+</html>

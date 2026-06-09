@@ -128,6 +128,10 @@ emojiRateView.rateColorRange = (
 * **Testing:** Expand unit tests for color interpolation, gesture handling, and path generation; add UI snapshot tests for common styles.
 * **Examples:** Keep both Swift and Objective-C demos current, and add a SwiftUI wrapper demo for apps that embed UIKit controls in SwiftUI.
 
+
+## Design assets
+Editable HTML marketing assets are available in `Resources/promo_poster.html` and `Resources/architecture_diagram.html`. They use inline CSS so colors, copy, layout, and diagrams can be changed without design tools.
+
 ## Author
 zekunyan, zekunyan@163.com
 
