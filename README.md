@@ -132,6 +132,10 @@ emojiRateView.rateColorRange = (
 ## Design assets
 Editable HTML marketing assets are available in `Resources/promo_poster.html` and `Resources/architecture_diagram.html`. They use inline CSS so colors, copy, layout, and diagrams can be changed without design tools.
 
+![Promo poster](Resources/promo_poster.jpg)
+
+![Architecture diagram](Resources/architecture_diagram.jpg)
+
 ## Author
 zekunyan, zekunyan@163.com
 

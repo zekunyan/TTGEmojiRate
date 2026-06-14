@@ -145,12 +145,12 @@
 
     .phone {
       position: absolute;
-      left: 84px;
-      top: 4px;
-      width: 350px;
-      height: 720px;
-      border: 18px solid #101828;
-      border-radius: 52px;
+      left: 0;
+      top: 28px;
+      width: 300px;
+      height: 650px;
+      border: 16px solid #101828;
+      border-radius: 46px;
       background: #f7faff;
       box-shadow: var(--shadow);
       overflow: hidden;
@@ -158,30 +158,30 @@
 
     .notch {
       position: absolute;
-      left: 110px;
+      left: 92px;
       top: 0;
-      width: 130px;
-      height: 32px;
+      width: 116px;
+      height: 30px;
       background: #101828;
       border-radius: 0 0 22px 22px;
       z-index: 2;
     }
 
     .phone-inner {
-      padding: 68px 30px 28px;
+      padding: 62px 26px 24px;
     }
 
     .time {
       position: absolute;
-      top: 38px;
-      left: 38px;
+      top: 34px;
+      left: 34px;
       font-size: 14px;
       font-weight: 900;
     }
 
     .screen-title {
       margin: 0 0 6px;
-      font-size: 27px;
+      font-size: 24px;
       line-height: 1;
       letter-spacing: -1px;
       font-weight: 950;
@@ -190,15 +190,15 @@
     .screen-copy {
       margin: 0 0 18px;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       line-height: 1.25;
     }
 
     .emoji-face {
-      width: 245px;
-      height: 245px;
-      margin: 22px auto 24px;
+      width: 210px;
+      height: 210px;
+      margin: 18px auto 20px;
       border-radius: 50%;
       display: grid;
       place-items: center;
@@ -243,6 +243,9 @@
     .chip.pink { background: var(--pink); }
     .chip.purple { background: var(--purple); }
     .chip.cyan { background: var(--cyan); }
+    .compact-chip.blue { background: var(--blue); }
+    .compact-chip.green { background: var(--green); }
+    .compact-chip.purple { background: var(--purple); }
 
     .floating-card {
       position: absolute;
@@ -254,17 +257,17 @@
     }
 
     .card-top {
-      right: 4px;
+      right: 0;
       top: 42px;
-      width: 570px;
-      padding: 30px;
+      width: 500px;
+      padding: 28px;
     }
 
     .card-mid {
-      right: 30px;
+      right: 0;
       top: 324px;
-      width: 500px;
-      padding: 30px;
+      width: 470px;
+      padding: 28px;
     }
 
     .card-title-row {
@@ -287,7 +290,7 @@
 
     .floating-card h2 {
       margin: 0 0 20px;
-      font-size: 36px;
+      font-size: 32px;
       line-height: 0.98;
       letter-spacing: -1.8px;
     }
@@ -304,6 +307,7 @@
       border: 1px solid var(--line);
       border-radius: 16px;
       background: #f8fbff;
+      min-width: 0;
     }
 
     .mini-box strong {
@@ -327,11 +331,23 @@
       font-weight: 900;
     }
 
+    .compact-chip {
+      display: inline-block;
+      max-width: 100%;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: white;
+      font-size: 11px;
+      line-height: 1.08;
+      font-weight: 900;
+      white-space: normal;
+    }
+
     .dark-panel {
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 610px;
+      width: 500px;
       padding: 26px 30px;
       border-radius: 24px;
       color: #fff;
@@ -497,9 +513,9 @@
             <span class="label">UIKit native</span>
           </div>
           <div class="mini-grid">
-            <div class="mini-box"><strong>Line width</strong><span class="chip blue">0.5...20</span></div>
-            <div class="mini-box"><strong>Mouth</strong><span class="chip green">width · lip · curve</span></div>
-            <div class="mini-box"><strong>Eyes</strong><span class="chip purple">show · size · position</span></div>
+            <div class="mini-box"><strong>Line width</strong><span class="compact-chip blue">0.5...20</span></div>
+            <div class="mini-box"><strong>Mouth</strong><span class="compact-chip green">width · lip · curve</span></div>
+            <div class="mini-box"><strong>Eyes</strong><span class="compact-chip purple">show · size · position</span></div>
           </div>
         </article>
 
