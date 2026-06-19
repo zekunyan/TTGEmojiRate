@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TTGEmojiRate Quick Start - Interactive</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #dce6f2;
+      color: #0f172a;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+    }
+    .canvas {
+      width: 1440px;
+      height: 900px;
+      overflow: hidden;
+      padding: 60px 74px;
+      background: linear-gradient(135deg, #fbfdff 0%, #edf7ff 52%, #f6fbff 100%);
+    }
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 34px;
+    }
+    .label {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #0369a1;
+      font-size: 20px;
+      font-weight: 900;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+    }
+    .step {
+      color: #64748b;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 714px 390px;
+      gap: 96px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: 68px;
+      line-height: 1;
+      letter-spacing: 0;
+      font-weight: 950;
+    }
+    .lead {
+      width: 650px;
+      margin: 0 0 30px;
+      color: #475569;
+      font-size: 24px;
+      line-height: 1.32;
+      font-weight: 700;
+    }
+    pre {
+      margin: 0;
+      padding: 28px 32px;
+      border-radius: 20px;
+      background: #0f172a;
+      color: #e8f3ff;
+      font: 650 21px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      box-shadow: 0 28px 70px rgba(15, 23, 42, 0.22);
+      white-space: pre-wrap;
+    }
+    .notes {
+      display: flex;
+      gap: 13px;
+      margin-top: 22px;
+    }
+    .note {
+      padding: 13px 17px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #334155;
+      font-size: 18px;
+      font-weight: 850;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+    }
+    .phone {
+      width: 356px;
+      height: 774px;
+      padding: 13px;
+      border-radius: 56px;
+      background: #0f172a;
+      box-shadow: 0 44px 94px rgba(15, 23, 42, 0.24);
+      overflow: hidden;
+      transform: rotate(3deg);
+    }
+    .phone img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 42px;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas" id="asset">
+    <div class="topline">
+      <div class="label">Quick start</div>
+      <div class="step">01 / Vertical feeling input</div>
+    </div>
+    <section class="grid">
+      <div>
+        <h1>Let users rate by moving emotion</h1>
+        <p class="lead">The core interaction is direct: drag the emoji up or down to turn a feeling into a score. Free-step values keep the motion smooth.</p>
+        <pre><code>let rateView = EmojiRateView(frame: frame)
+rateView.maximumRateValue = 10
+rateView.rateStep = 0
+rateView.rateGestureDirection = .vertical
+
+rateView.rateValueChangeCallback = { score in
+    updateFeedback(score)
+}</code></pre>
+        <div class="notes">
+          <span class="note">vertical drag first</span>
+          <span class="note">free step by default</span>
+          <span class="note">slider fallback</span>
+        </div>
+      </div>
+      <figure class="phone"><img src="screenshots/review-vertical.jpg" alt="Vertical TTGEmojiRate setup" /></figure>
+    </section>
+  </main>
+</body>
+</html>

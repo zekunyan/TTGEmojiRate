@@ -1,7 +1,7 @@
-platform :ios, '8.0'
+platform :ios, '16.0'
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 use_frameworks!
 
 target 'TTGEmojiRateObjcExample' do
   pod "TTGEmojiRate", :path => "../"
 end
-

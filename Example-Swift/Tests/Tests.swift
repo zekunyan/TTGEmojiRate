@@ -2,28 +2,73 @@ import UIKit
 import XCTest
 import TTGEmojiRate
 
-class Tests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class Tests: XCTestCase {
+    func testRateValueClampsToSupportedRange() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+
+        rateView.rateValue = 8
+        XCTAssertEqual(rateView.rateValue, 5)
+
+        rateView.rateValue = -2
+        XCTAssertEqual(rateView.rateValue, 0)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testDefaultRateStepAllowsContinuousValues() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+
+        XCTAssertEqual(rateView.rateStep, 0)
+
+        rateView.rateValue = 3.37
+        XCTAssertEqual(rateView.rateValue, 3.37, accuracy: 0.0001)
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+
+    func testCustomizationValuesClampToSupportedRanges() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+
+        rateView.rateLineWidth = 40
+        XCTAssertEqual(rateView.rateLineWidth, 20)
+
+        rateView.rateMouthWidth = 0.1
+        XCTAssertEqual(rateView.rateMouthWidth, 0.2)
+
+        rateView.rateDragSensitivity = 20
+        XCTAssertEqual(rateView.rateDragSensitivity, 10)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testCustomRateRangeAndStepClampValue() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+        rateView.minimumRateValue = 1
+        rateView.maximumRateValue = 10
+        rateView.rateStep = 0.5
+
+        rateView.rateValue = 7.24
+        XCTAssertEqual(rateView.rateValue, 7)
+
+        rateView.rateValue = 7.26
+        XCTAssertEqual(rateView.rateValue, 7.5)
+
+        rateView.rateValue = 12
+        XCTAssertEqual(rateView.rateValue, 10)
     }
-    
+
+    func testSetRateValueAnimatedStillAppliesClampingAndStep() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+        rateView.rateStep = 1
+
+        rateView.setRateValue(3.6, animated: false)
+        XCTAssertEqual(rateView.rateValue, 4)
+    }
+
+    func testReadOnlyAndTapFlagsUpdateGestureAvailability() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+        XCTAssertEqual(rateView.gestureRecognizers?.count, 2)
+
+        rateView.isTapToRateEnabled = false
+        let recognizersWithTapDisabled = rateView.gestureRecognizers ?? []
+        XCTAssertTrue(recognizersWithTapDisabled.contains { $0 is UIPanGestureRecognizer && $0.isEnabled })
+        XCTAssertTrue(recognizersWithTapDisabled.contains { $0 is UITapGestureRecognizer && !$0.isEnabled })
+
+        rateView.isReadOnly = true
+        XCTAssertTrue((rateView.gestureRecognizers ?? []).allSatisfy { !$0.isEnabled })
+    }
 }
