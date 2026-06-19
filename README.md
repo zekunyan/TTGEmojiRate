@@ -1,7 +1,6 @@
-# TTGEmojiRate
-An emoji-like rating view for iOS, implemented in **Swift 5.9**.
+# 😊 TTGEmojiRate
 
-**Android version: [PeterSmileRate](https://github.com/SilicorniO/PeterSmileRate) by [SilicorniO](https://github.com/SilicorniO). Great work ! :)**
+An expressive emoji rating view for iOS.
 
 [![Build Status](https://travis-ci.org/zekunyan/TTGEmojiRate.svg?branch=master)](https://travis-ci.org/zekunyan/TTGEmojiRate)
 [![Version](https://img.shields.io/cocoapods/v/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
@@ -9,135 +8,160 @@ An emoji-like rating view for iOS, implemented in **Swift 5.9**.
 [![Platform](https://img.shields.io/cocoapods/p/TTGEmojiRate.svg?style=flat)](http://cocoapods.org/pods/TTGEmojiRate)
 [![Swift 5.9](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://developer.apple.com/swift/)
 
-[![Apps Using](https://img.shields.io/badge/Apps%20Using-%3E%2060-blue.svg)](https://github.com/zekunyan/TTGEmojiRate)
-[![Total Download](https://img.shields.io/badge/Total%20Download-%3E%201,214-blue.svg)](https://github.com/zekunyan/TTGEmojiRate)
+TTGEmojiRate turns feedback into a living expression. Its original interaction is vertical drag: users move the emoji up or down to score a moment, express mood, and make ratings feel closer to a real emotional response.
 
-![Screenshot](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_example.gif)
+![TTGEmojiRate poster](Resources/promo_poster.png)
 
-**Inspired by [Rating Version A - Hoang Nguyen](https://dribbble.com/shots/2211556-Rating-Version-A)**
+## ✨ Highlights
 
-![Rating Version A - Hoang Nguyen](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_Dribbble.gif)
+- 😄 Emotion-first rating UI for reviews, surveys, NPS-style prompts, satisfaction scores, and lightweight mood input.
+- 🎚 Free-step values by default, with optional half-step or whole-step snapping when a product needs stricter scoring.
+- 🎨 Multiple face shapes, morphing outlines, filled faces, dynamic colors, and gradient strokes/fills.
+- ✍️ Custom path replacement or overlay for branded symbols, waveform reactions, badges, or delegate-driven drawings.
+- 🔒 Read-only display, tap-to-rate, animated value updates, callbacks, and Interface Builder-friendly properties.
+- 🧪 Rebuilt Swift and Objective-C example apps with focused demos and an interactive playground.
 
-**Blog**
-[土土哥的技术Blog - Swift开源项目: TTGEmojiRate的实现](http://tutuge.me/2015/10/25/ttgemojirate-lib/)
+## 🚀 Quick Start
 
-## Features
-* More interactive with Emoji, drag gesture, and tap-to-rate.
-* Highly customizable.
-* Configurable rating ranges and step values for 5-star, 10-point, NPS, and survey-style scoring.
-* Optional read-only display mode and animated programmatic value updates.
-* Can be used in Interface Builder.
-* Supports Swift and Objective-C example apps.
+Create the control, choose a range, and listen for score changes:
 
-![IB example](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_1.png)
+![Quick start: create](Resources/quick_start_create.png)
 
-## What
-TTGEmojiRate is an emoji-like rating view for iOS which is implemented in Swift.
-You can drag up and down or tap on the Emoji face to change the rate, which is more interactive.
-TTGEmojiRate is also highly customizable: many features can be configured, such as the rating range, step value, emoji line width, mouth width, color range, read-only mode, and gesture sensitivity.
+Shape the rating surface with face outlines, fills, and gradients:
 
-## Usage
-### Use TTGEmojiRate
+![Quick start: configure](Resources/quick_start_configure.png)
 
-1. Create an instance of `EmojiRateView` and add it to the parent view.
+Replace or overlay the built-in drawing when the rating UI should feel product-specific:
+
+![Quick start: custom paths](Resources/quick_start_custom_paths.png)
+
 ```swift
-let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+import TTGEmojiRate
+
+let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 220, height: 220))
 rateView.minimumRateValue = 0
 rateView.maximumRateValue = 10
-rateView.rateStep = 0.5
-rateView.center = view.center
+rateView.rateStep = 0
+
+rateView.rateValueChangeCallback = { score in
+    print("Score:", score)
+}
+
 view.addSubview(rateView)
 ```
 
-2. Drop a view in Interface Builder and set the `Custom Class` to `EmojiRateView`.
+## 📦 Installation
 
-### Run examples
-To run the example projects, clone the repo and run `pod install` from `Example-Swift` or `Example-Objc` first.
-
-## Requirements
-* Swift 5.9
-* Xcode 15 or later
-* iOS 16.0 or later
-
-## Installation
 ### CocoaPods
-You can use [CocoaPods](http://cocoapods.org) to install `TTGEmojiRate` by adding it to your `Podfile`:
+
+Add TTGEmojiRate to your `Podfile`:
 
 ```ruby
 pod "TTGEmojiRate"
 ```
 
 ### Carthage
-You can use [Carthage](https://github.com/Carthage/Carthage) to install `TTGEmojiRate` by adding it to your `Cartfile`:
-```
+
+Add TTGEmojiRate to your `Cartfile`:
+
+```text
 github "zekunyan/TTGEmojiRate"
 ```
 
-## Customization
-![Customization](https://github.com/zekunyan/TTGEmojiRate/raw/master/Resources/TTGEmojiRate_2.png)
+## 🛠 Customization
 
-#### rateValueChangeCallback
-`rateValueChangeCallback: ((Float) -> Void)?` defines the callback closure when `rateValue` changes.
+### Range and Step
+
+`rateStep = 0` keeps motion continuous. Use `0.5` or `1` when you need snapped survey values.
+
 ```swift
-emojiRateView.rateValueChangeCallback = { rateValue in
-    NSLog("The new rate value is: \(rateValue)")
+rateView.minimumRateValue = 1
+rateView.maximumRateValue = 5
+rateView.rateStep = 0.5
+rateView.setRateValue(4.5, animated: true)
+```
+
+### Face Shape, Fill, and Gradient
+
+```swift
+rateView.faceShape = TTGEmojiRateFaceShape.blob.rawValue
+rateView.faceShapeMorphEnabled = true
+rateView.faceFillEnabled = true
+rateView.faceFillGradientEnabled = true
+rateView.rateGradientColorEnabled = true
+rateView.rateGradientColors = [
+    .systemCyan,
+    .systemBlue,
+    .systemPurple
+]
+```
+
+### Expression Presets
+
+```swift
+rateView.setEmojiExpressionPreset(.playful)
+rateView.setEmojiEyeStyle(.heart)
+rateView.setEmojiMouthStyle(.openSmile)
+```
+
+### Custom Paths
+
+```swift
+rateView.customEmojiPathMode = TTGEmojiRateCustomPathMode.replace.rawValue
+rateView.customEmojiPathProvider = { rect, progress, view in
+    let path = UIBezierPath()
+    let faceRect = rect.insetBy(dx: 12, dy: 12)
+    path.append(UIBezierPath(ovalIn: faceRect))
+
+    let symbol = UIBezierPath()
+    let midY = rect.midY + (1 - progress) * 20
+    symbol.move(to: CGPoint(x: rect.minX + 54, y: midY))
+    symbol.addLine(to: CGPoint(x: rect.midX, y: midY - 18))
+    symbol.addLine(to: CGPoint(x: rect.maxX - 54, y: midY))
+    path.append(symbol)
+
+    return path
 }
 ```
 
-#### Rating range and step
-`minimumRateValue`, `maximumRateValue`, and `rateStep` let the same control support continuous 0-5 ratings, 10-point ratings, whole-number survey scores, or half-step ratings.
+Use `.overlay` when you want to keep the built-in emoji and draw extra artwork on top.
+
+### Display States
+
 ```swift
-emojiRateView.minimumRateValue = 1
-emojiRateView.maximumRateValue = 10
-emojiRateView.rateStep = 0.5
-emojiRateView.setRateValue(7.5, animated: true)
+rateView.isReadOnly = true
+rateView.isTapToRateEnabled = false
+rateView.setRateColor(from: .systemBlue, to: .systemGreen)
 ```
 
-#### Read-only and tap-to-rate
-`isReadOnly` disables user gestures while keeping the current value visible. `isTapToRateEnabled` controls whether taps can update the rating.
-```swift
-emojiRateView.isReadOnly = false
-emojiRateView.isTapToRateEnabled = true
-```
+## 🧪 Examples
 
-#### Objective-C helpers
-Objective-C callers can use selector-friendly APIs for animated value changes and color ranges.
-```objective-c
-[rateView setRateValue:6 animated:YES];
-[rateView setRateColorFrom:[UIColor systemRedColor] to:[UIColor systemGreenColor]];
-```
+The repository includes both Swift and Objective-C examples. Each example is fully code-driven and includes:
 
-#### rateColorRange
-`rateColorRange: (from: UIColor, to: UIColor)`
-When `rateValue` moves from `minimumRateValue` to `maximumRateValue`, the `rateColor` will change from the `from` color to the `to` color.
-```swift
-emojiRateView.rateColorRange = (
-    UIColor.red,
-    UIColor.green
-)
-```
+- A playground for live configuration.
+- Focused demos for gesture input, face shapes, gradients, custom paths, read-only state, and programmatic updates.
+- Slider-backed screens for precise testing alongside direct emoji interaction.
 
-#### rateDragSensitivity
-`rateDragSensitivity: CGFloat` defines the sensitivity when dragging to change `rateValue`.
+Run `pod install` inside `Example-Swift` or `Example-Objc`, then open the generated workspace.
 
-## Suggested next steps
-* **Performance:** Cache computed face, mouth, and eye paths per bounds/configuration and redraw only when inputs change; split face, mouth, and eye drawing into separate layers for cheaper partial updates.
-* **Extensibility:** Add a style/configuration object and Swift Package Manager support for modern dependency managers.
-* **Ease of use:** Provide delegate and Combine-style publisher APIs in addition to the callback, plus accessibility labels/adjustable actions for VoiceOver.
-* **More scenarios:** Add horizontal drag mode, Dynamic Type-aware labels, dark mode presets, and right-to-left layout validation.
-* **Testing:** Expand unit tests for color interpolation, gesture handling, and path generation; add UI snapshot tests for common styles.
-* **Examples:** Keep both Swift and Objective-C demos current, and add a SwiftUI wrapper demo for apps that embed UIKit controls in SwiftUI.
+## ✅ Requirements
 
+- iOS 16.0+
+- Xcode 15+
+- Swift 5.9+
 
-## Design assets
-Editable HTML marketing assets are available in `Resources/promo_poster.html` and `Resources/architecture_diagram.html`. They use inline CSS so colors, copy, layout, and diagrams can be changed without design tools.
+## 🙌 Credits
 
-![Promo poster](Resources/promo_poster.jpg)
+Inspired by [Rating Version A - Hoang Nguyen](https://dribbble.com/shots/2211556-Rating-Version-A).
 
-![Architecture diagram](Resources/architecture_diagram.jpg)
+Android version: [PeterSmileRate](https://github.com/SilicorniO/PeterSmileRate) by [SilicorniO](https://github.com/SilicorniO).
+
+Blog: [土土哥的技术Blog - Swift开源项目: TTGEmojiRate的实现](http://tutuge.me/2015/10/25/ttgemojirate-lib/)
 
 ## Author
+
 zekunyan, zekunyan@163.com
 
 ## License
+
 TTGEmojiRate is available under the MIT license. See the LICENSE file for more info.

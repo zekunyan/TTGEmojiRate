@@ -1,9 +1,9 @@
 {
   "name": "TTGEmojiRate",
   "module_name": "TTGEmojiRate",
-  "version": "0.2.0",
-  "summary": "An emoji-based rating view for iOS, implemented in Swift.",
-  "description": "TTGEmojiRate is an emoji-based rating view for iOS which is implemented in Swift.\nYou can drop up and down on the Emoji face to change the rate with the color changing, which is more interactive.\nTTGEmojiRate is also highly customizable that many features of it can be configure, like the emoji line width and the mouth width.",
+  "version": "1.0.0",
+  "summary": "An expressive emoji rating view for iOS.",
+  "description": "TTGEmojiRate is an expressive emoji rating view for iOS.\nIt turns direct emoji interaction into continuous or stepped rating input,\nwith configurable ranges, face shapes, expression presets, fills, gradients,\ncustom drawing paths, read-only display, and Swift/Objective-C examples.",
   "homepage": "https://github.com/zekunyan/TTGEmojiRate",
   "license": "MIT",
   "authors": {
@@ -11,14 +11,15 @@
   },
   "source": {
     "git": "https://github.com/zekunyan/TTGEmojiRate.git",
-    "tag": "0.2.0"
+    "tag": "1.0.0"
   },
   "social_media_url": "http://tutuge.me",
   "platforms": {
     "ios": "16.0"
   },
-  "requires_arc": true,
   "swift_versions": "5.9",
-  "source_files": "Pod/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/*.h"
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*.{swift,h}",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "swift_version": "5.9"
 }

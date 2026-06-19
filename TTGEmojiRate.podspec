@@ -1,13 +1,14 @@
 Pod::Spec.new do |s|
   s.name             = "TTGEmojiRate"
   s.module_name      = "TTGEmojiRate"
-  s.version          = "0.3.0"
-  s.summary          = "An emoji-based rating view for iOS, implemented in Swift."
+  s.version          = "1.0.0"
+  s.summary          = "An expressive emoji rating view for iOS."
 
   s.description      = <<-DESC
-                        TTGEmojiRate is an emoji-based rating view for iOS which is implemented in Swift.
-                        You can drop up and down on the Emoji face to change the rate with the color changing, which is more interactive.
-                        TTGEmojiRate is also highly customizable that many features of it can be configure, like the emoji line width and the mouth width.
+                        TTGEmojiRate is an expressive emoji rating view for iOS.
+                        It turns direct emoji interaction into continuous or stepped rating input,
+                        with configurable ranges, face shapes, expression presets, fills, gradients,
+                        custom drawing paths, read-only display, and Swift/Objective-C examples.
                        DESC
 
   s.homepage         = "https://github.com/zekunyan/TTGEmojiRate"
@@ -20,6 +21,6 @@ Pod::Spec.new do |s|
   s.swift_version    = "5.9"
   s.requires_arc     = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/**/*.{swift,h}'
   s.public_header_files = 'Pod/Classes/**/*.h'
 end

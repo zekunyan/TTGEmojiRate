@@ -13,6 +13,15 @@ final class Tests: XCTestCase {
         XCTAssertEqual(rateView.rateValue, 0)
     }
 
+    func testDefaultRateStepAllowsContinuousValues() {
+        let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+
+        XCTAssertEqual(rateView.rateStep, 0)
+
+        rateView.rateValue = 3.37
+        XCTAssertEqual(rateView.rateValue, 3.37, accuracy: 0.0001)
+    }
+
     func testCustomizationValuesClampToSupportedRanges() {
         let rateView = EmojiRateView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
 

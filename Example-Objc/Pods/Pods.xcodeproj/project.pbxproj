@@ -7,215 +7,211 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D031332D7E6C2CA61DDFA63B553FC5 /* TTGEmojiRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDD2647DB57725B7BEFDD26E7428854 /* TTGEmojiRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		144C2185212D6416EDD3C261A769AB3A /* TTGEmojiRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B879E841EB9C0742465B0B503EDB7 /* TTGEmojiRate-dummy.m */; };
-		1B5338752C468E295764B15B9C17F8FE /* Pods-TTGEmojiRateObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8373A50A0268DE1C91170D5FDBE4857E /* Pods-TTGEmojiRateObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BF9B528FD5DB525CEE51FD22D8F06C6 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = B67B87153D69CE987BF6E1CEFC86BA5C /* Info.plist */; };
-		9E3A1E7D94417892DC95584E1FC2EEEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B341372DAE6CBD5CFEE47B2B42C1D622 /* TTGEmojiRate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC82EE2A3FFD6865917878916636900 /* TTGEmojiRate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDFB3E4F7D6D75FE322CFC0A176F4EBA /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751E9085AF1B69033555C5A01F75A8A /* EmojiRateView.swift */; };
-		E3A9BB81D1BED73F008815F8B00FB191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		F1B4EAC56BF6B184FEBB21FC23E716B1 /* Pods-TTGEmojiRateObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44914225725B865E52C02C8D55312C3E /* Pods-TTGEmojiRateObjcExample-dummy.m */; };
+		46B71B52BB33C6348726DD5B83409469 /* TTGEmojiRate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F791B696BCD151A714C3402423A5085 /* TTGEmojiRate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CF441ABBBEC01B065F9BD22D19B1D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		8B178216A2AA61D2CE456B3E418B8FDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		9C8EFD895FC595BAEF5315DF667EA6FA /* TTGEmojiRate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0E176188796E52B1B39024EECBDF7 /* TTGEmojiRate-dummy.m */; };
+		9D9A763CAC3893C17E3A3FE1822B8215 /* TTGEmojiRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2304973F188A862EF7EAB9F78BB36701 /* TTGEmojiRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F871EBB76E2566A392F7905E113C89CE /* Pods-TTGEmojiRateObjcExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F52B3BC0795E819C0A4E3C2E6F2C31 /* Pods-TTGEmojiRateObjcExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAAA01C750C948D454BB1F8CD38BAF59 /* Pods-TTGEmojiRateObjcExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 750AC116E62D6DAB976F6B604F0FD080 /* Pods-TTGEmojiRateObjcExample-dummy.m */; };
+		FCF0BFCCA17807E62EDFE1548348FC90 /* EmojiRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473DC9AD8EFE73FF4EC15A52677A1131 /* EmojiRateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		29233F3668A8374D0DE2F105533563D9 /* PBXContainerItemProxy */ = {
+		8DA57E799A9BB03187C7B19CD1BEB51A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D972B72367752364C16FEE89642E921;
+			remoteGlobalIDString = 649FE8151CEBBA77328FCFD98DFB7108;
 			remoteInfo = TTGEmojiRate;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D1285DE7E3742BA664DF7606CDC001A /* Pods-TTGEmojiRateObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRateObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		16082041936845B7BF7E793CBB373FCB /* Pods-TTGEmojiRateObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRateObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
-		3B3B879E841EB9C0742465B0B503EDB7 /* TTGEmojiRate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGEmojiRate-dummy.m"; sourceTree = "<group>"; };
-		44914225725B865E52C02C8D55312C3E /* Pods-TTGEmojiRateObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTGEmojiRateObjcExample-dummy.m"; sourceTree = "<group>"; };
-		4CCF59CB809294B8E82BB98B85C62AA0 /* Pods-TTGEmojiRateObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGEmojiRateObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4CDD2647DB57725B7BEFDD26E7428854 /* TTGEmojiRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TTGEmojiRate.h; sourceTree = "<group>"; };
-		4F537CBDC0AD3D2297BDE696D2CE9998 /* TTGEmojiRate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TTGEmojiRate.modulemap; sourceTree = "<group>"; };
-		5D81392EFF119321FEF38A2E041B019F /* Pods-TTGEmojiRateObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TTGEmojiRateObjcExample.modulemap"; sourceTree = "<group>"; };
-		7418957D6F9999D564FA1B2253A58B21 /* TTGEmojiRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTGEmojiRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		753C9CA2E944C4EB7D32DF39F20E466C /* Pods-TTGEmojiRateObjcExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRateObjcExample-resources.sh"; sourceTree = "<group>"; };
-		82E6B1877E27F9D6924BA28CA3FA74A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8373A50A0268DE1C91170D5FDBE4857E /* Pods-TTGEmojiRateObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTGEmojiRateObjcExample-umbrella.h"; sourceTree = "<group>"; };
-		8D06F3918DC1A28B0BA23194D0FEC496 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5F4863D389A414189F67793D5319595 /* TTGEmojiRate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-prefix.pch"; sourceTree = "<group>"; };
-		A747168DF59E95E110AAB2AA3F8A0426 /* Pods-TTGEmojiRateObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRateObjcExample-frameworks.sh"; sourceTree = "<group>"; };
-		AAC82EE2A3FFD6865917878916636900 /* TTGEmojiRate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-umbrella.h"; sourceTree = "<group>"; };
-		B67B87153D69CE987BF6E1CEFC86BA5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9B0FA3B3CED9518F3E3BC8BDCFDCCC6 /* Pods_TTGEmojiRateObjcExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTGEmojiRateObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C751E9085AF1B69033555C5A01F75A8A /* EmojiRateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EmojiRateView.swift; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E82694D4CDA226D875952E81D9822161 /* TTGEmojiRate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGEmojiRate.xcconfig; sourceTree = "<group>"; };
-		F6ABD6D08EB8252D9C88602F33FCBEE1 /* Pods-TTGEmojiRateObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRateObjcExample.release.xcconfig"; sourceTree = "<group>"; };
+		0D1E59AE0245179013508F314C6F8BAB /* Pods-TTGEmojiRateObjcExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TTGEmojiRateObjcExample.modulemap"; sourceTree = "<group>"; };
+		0ECAC04A056BE88B9C3ECB83022F8552 /* Pods-TTGEmojiRateObjcExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TTGEmojiRateObjcExample"; path = Pods_TTGEmojiRateObjcExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14059080830259138B311E199BDD4EAE /* TTGEmojiRate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TTGEmojiRate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		15B063C58FC5276044F1DD44679E099F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2304973F188A862EF7EAB9F78BB36701 /* TTGEmojiRate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGEmojiRate.h; path = Pod/Classes/TTGEmojiRate.h; sourceTree = "<group>"; };
+		2AF0E176188796E52B1B39024EECBDF7 /* TTGEmojiRate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGEmojiRate-dummy.m"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F737A5D6F2DD8ABCA97030F47B150A1 /* TTGEmojiRate */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTGEmojiRate; path = TTGEmojiRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		473DC9AD8EFE73FF4EC15A52677A1131 /* EmojiRateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiRateView.swift; path = Pod/Classes/EmojiRateView.swift; sourceTree = "<group>"; };
+		494C11F2F692F19AF8D9BD5228904F11 /* Pods-TTGEmojiRateObjcExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRateObjcExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F791B696BCD151A714C3402423A5085 /* TTGEmojiRate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-umbrella.h"; sourceTree = "<group>"; };
+		750AC116E62D6DAB976F6B604F0FD080 /* Pods-TTGEmojiRateObjcExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTGEmojiRateObjcExample-dummy.m"; sourceTree = "<group>"; };
+		7BCCF4F04410BFA10629D4A34CB7B7D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		862265924327096B82F1F7E09F08D48F /* Pods-TTGEmojiRateObjcExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTGEmojiRateObjcExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A168691DC56194419FB1245EC2C3EBD6 /* Pods-TTGEmojiRateObjcExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTGEmojiRateObjcExample-Info.plist"; sourceTree = "<group>"; };
+		A3152E85AA30480BA5098F002A52CBCB /* Pods-TTGEmojiRateObjcExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRateObjcExample.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4CF0A44192745F93F000A6BE6E7A50 /* TTGEmojiRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGEmojiRate.release.xcconfig; sourceTree = "<group>"; };
+		B18E239E95429F0C162BA1EDB0D9FE06 /* Pods-TTGEmojiRateObjcExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTGEmojiRateObjcExample-frameworks.sh"; sourceTree = "<group>"; };
+		B9F52B3BC0795E819C0A4E3C2E6F2C31 /* Pods-TTGEmojiRateObjcExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTGEmojiRateObjcExample-umbrella.h"; sourceTree = "<group>"; };
+		CAE5EB4991A45629F81117794F16B8FE /* TTGEmojiRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGEmojiRate.debug.xcconfig; sourceTree = "<group>"; };
+		CD8AABB0217EE3587E2463471CA7B54A /* TTGEmojiRate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTGEmojiRate.modulemap; sourceTree = "<group>"; };
+		D13F51CE92BF473BE3144DB7C81B9C42 /* TTGEmojiRate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGEmojiRate-prefix.pch"; sourceTree = "<group>"; };
+		D6DD408FE7EE17B65284C0B10895B98B /* Pods-TTGEmojiRateObjcExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTGEmojiRateObjcExample.release.xcconfig"; sourceTree = "<group>"; };
+		FEADCB7B52CD832FEA8A6CF307038F59 /* TTGEmojiRate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTGEmojiRate-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4521F86668F193FAC54A2B9512E9D6AF /* Frameworks */ = {
+		5C6C7834DD09A7B305577A109E9899E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3A9BB81D1BED73F008815F8B00FB191 /* Foundation.framework in Frameworks */,
+				8B178216A2AA61D2CE456B3E418B8FDB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD16010608BBA0FC93B15BC4376EE14F /* Frameworks */ = {
+		C62E68E8262A6BBCFA8C8FD6B241AF8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3A1E7D94417892DC95584E1FC2EEEC /* Foundation.framework in Frameworks */,
+				7CF441ABBBEC01B065F9BD22D19B1D43 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EC8A8C1072CBACFF8B05F380F62F942 /* Classes */ = {
+		0B15CE84E42FB0291C62702372BB74CD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C751E9085AF1B69033555C5A01F75A8A /* EmojiRateView.swift */,
-				B67B87153D69CE987BF6E1CEFC86BA5C /* Info.plist */,
-				4CDD2647DB57725B7BEFDD26E7428854 /* TTGEmojiRate.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		13ED4CE18768C16304A50097F0C5A177 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2B0C96B1A5A10B10C59F4B5D687E1D10 /* TTGEmojiRate */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2B0C96B1A5A10B10C59F4B5D687E1D10 /* TTGEmojiRate */ = {
-			isa = PBXGroup;
-			children = (
-				44254744D787D7E8A18D66FCBADF3D50 /* Pod */,
-				8D1AFBFE1FCD1FD0AC522531A307880F /* Support Files */,
-			);
-			name = TTGEmojiRate;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		32CF4F88B008AD534008E7E67F3D3C57 /* Pods-TTGEmojiRateObjcExample */ = {
-			isa = PBXGroup;
-			children = (
-				8D06F3918DC1A28B0BA23194D0FEC496 /* Info.plist */,
-				5D81392EFF119321FEF38A2E041B019F /* Pods-TTGEmojiRateObjcExample.modulemap */,
-				4CCF59CB809294B8E82BB98B85C62AA0 /* Pods-TTGEmojiRateObjcExample-acknowledgements.markdown */,
-				0D1285DE7E3742BA664DF7606CDC001A /* Pods-TTGEmojiRateObjcExample-acknowledgements.plist */,
-				44914225725B865E52C02C8D55312C3E /* Pods-TTGEmojiRateObjcExample-dummy.m */,
-				A747168DF59E95E110AAB2AA3F8A0426 /* Pods-TTGEmojiRateObjcExample-frameworks.sh */,
-				753C9CA2E944C4EB7D32DF39F20E466C /* Pods-TTGEmojiRateObjcExample-resources.sh */,
-				8373A50A0268DE1C91170D5FDBE4857E /* Pods-TTGEmojiRateObjcExample-umbrella.h */,
-				16082041936845B7BF7E793CBB373FCB /* Pods-TTGEmojiRateObjcExample.debug.xcconfig */,
-				F6ABD6D08EB8252D9C88602F33FCBEE1 /* Pods-TTGEmojiRateObjcExample.release.xcconfig */,
-			);
-			name = "Pods-TTGEmojiRateObjcExample";
-			path = "Target Support Files/Pods-TTGEmojiRateObjcExample";
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		44254744D787D7E8A18D66FCBADF3D50 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0EC8A8C1072CBACFF8B05F380F62F942 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				13ED4CE18768C16304A50097F0C5A177 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B4DBA0ED95EB7AA61216E899DC365B2D /* Products */,
-				B224558A78D987E4E0C381CBE3155190 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8D1AFBFE1FCD1FD0AC522531A307880F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				82E6B1877E27F9D6924BA28CA3FA74A5 /* Info.plist */,
-				4F537CBDC0AD3D2297BDE696D2CE9998 /* TTGEmojiRate.modulemap */,
-				E82694D4CDA226D875952E81D9822161 /* TTGEmojiRate.xcconfig */,
-				3B3B879E841EB9C0742465B0B503EDB7 /* TTGEmojiRate-dummy.m */,
-				A5F4863D389A414189F67793D5319595 /* TTGEmojiRate-prefix.pch */,
-				AAC82EE2A3FFD6865917878916636900 /* TTGEmojiRate-umbrella.h */,
+				CD8AABB0217EE3587E2463471CA7B54A /* TTGEmojiRate.modulemap */,
+				2AF0E176188796E52B1B39024EECBDF7 /* TTGEmojiRate-dummy.m */,
+				FEADCB7B52CD832FEA8A6CF307038F59 /* TTGEmojiRate-Info.plist */,
+				D13F51CE92BF473BE3144DB7C81B9C42 /* TTGEmojiRate-prefix.pch */,
+				4F791B696BCD151A714C3402423A5085 /* TTGEmojiRate-umbrella.h */,
+				CAE5EB4991A45629F81117794F16B8FE /* TTGEmojiRate.debug.xcconfig */,
+				AF4CF0A44192745F93F000A6BE6E7A50 /* TTGEmojiRate.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example-Objc/Pods/Target Support Files/TTGEmojiRate";
 			sourceTree = "<group>";
 		};
-		B224558A78D987E4E0C381CBE3155190 /* Targets Support Files */ = {
+		27696E30605AB3839E790B47AF0A3228 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				32CF4F88B008AD534008E7E67F3D3C57 /* Pods-TTGEmojiRateObjcExample */,
+				9025362720AF5060DA8E6D0789726BB1 /* Pods-TTGEmojiRateObjcExample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B4DBA0ED95EB7AA61216E899DC365B2D /* Products */ = {
+		3E2807700550BC1F47CB5822CA7E6F93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9B0FA3B3CED9518F3E3BC8BDCFDCCC6 /* Pods_TTGEmojiRateObjcExample.framework */,
-				7418957D6F9999D564FA1B2253A58B21 /* TTGEmojiRate.framework */,
+				0ECAC04A056BE88B9C3ECB83022F8552 /* Pods-TTGEmojiRateObjcExample */,
+				3F737A5D6F2DD8ABCA97030F47B150A1 /* TTGEmojiRate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		63844ADF1E2CE57C12A128EF7DC44373 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				906468FE61830103028C0DF821B2DB62 /* TTGEmojiRate */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9025362720AF5060DA8E6D0789726BB1 /* Pods-TTGEmojiRateObjcExample */ = {
+			isa = PBXGroup;
+			children = (
+				0D1E59AE0245179013508F314C6F8BAB /* Pods-TTGEmojiRateObjcExample.modulemap */,
+				862265924327096B82F1F7E09F08D48F /* Pods-TTGEmojiRateObjcExample-acknowledgements.markdown */,
+				494C11F2F692F19AF8D9BD5228904F11 /* Pods-TTGEmojiRateObjcExample-acknowledgements.plist */,
+				750AC116E62D6DAB976F6B604F0FD080 /* Pods-TTGEmojiRateObjcExample-dummy.m */,
+				B18E239E95429F0C162BA1EDB0D9FE06 /* Pods-TTGEmojiRateObjcExample-frameworks.sh */,
+				A168691DC56194419FB1245EC2C3EBD6 /* Pods-TTGEmojiRateObjcExample-Info.plist */,
+				B9F52B3BC0795E819C0A4E3C2E6F2C31 /* Pods-TTGEmojiRateObjcExample-umbrella.h */,
+				A3152E85AA30480BA5098F002A52CBCB /* Pods-TTGEmojiRateObjcExample.debug.xcconfig */,
+				D6DD408FE7EE17B65284C0B10895B98B /* Pods-TTGEmojiRateObjcExample.release.xcconfig */,
+			);
+			name = "Pods-TTGEmojiRateObjcExample";
+			path = "Target Support Files/Pods-TTGEmojiRateObjcExample";
+			sourceTree = "<group>";
+		};
+		906468FE61830103028C0DF821B2DB62 /* TTGEmojiRate */ = {
+			isa = PBXGroup;
+			children = (
+				473DC9AD8EFE73FF4EC15A52677A1131 /* EmojiRateView.swift */,
+				2304973F188A862EF7EAB9F78BB36701 /* TTGEmojiRate.h */,
+				DCAD044F59132F558A7D1ED239B1271D /* Pod */,
+				0B15CE84E42FB0291C62702372BB74CD /* Support Files */,
+			);
+			name = TTGEmojiRate;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				63844ADF1E2CE57C12A128EF7DC44373 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3E2807700550BC1F47CB5822CA7E6F93 /* Products */,
+				27696E30605AB3839E790B47AF0A3228 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCAD044F59132F558A7D1ED239B1271D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				15B063C58FC5276044F1DD44679E099F /* LICENSE */,
+				7BCCF4F04410BFA10629D4A34CB7B7D8 /* README.md */,
+				14059080830259138B311E199BDD4EAE /* TTGEmojiRate.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F94B0B1211E343BCA28E209DB5DB14D /* Headers */ = {
+		100671B3C2F23DEE02B3F6D34A3216E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B341372DAE6CBD5CFEE47B2B42C1D622 /* TTGEmojiRate-umbrella.h in Headers */,
-				05D031332D7E6C2CA61DDFA63B553FC5 /* TTGEmojiRate.h in Headers */,
+				F871EBB76E2566A392F7905E113C89CE /* Pods-TTGEmojiRateObjcExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2627197CA3EAC5140ED06D3D8C3DFDAC /* Headers */ = {
+		24172DB8ECEED30798417F77DDD75AC6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B5338752C468E295764B15B9C17F8FE /* Pods-TTGEmojiRateObjcExample-umbrella.h in Headers */,
+				9D9A763CAC3893C17E3A3FE1822B8215 /* TTGEmojiRate.h in Headers */,
+				46B71B52BB33C6348726DD5B83409469 /* TTGEmojiRate-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D972B72367752364C16FEE89642E921 /* TTGEmojiRate */ = {
+		649FE8151CEBBA77328FCFD98DFB7108 /* TTGEmojiRate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D725879612BFAA86EE47769667694D7 /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */;
+			buildConfigurationList = 56FBE4B3216AF0A1C87D58DE94E9BF68 /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */;
 			buildPhases = (
-				289AB9D27FE40D7FF283563162341AC5 /* Sources */,
-				4521F86668F193FAC54A2B9512E9D6AF /* Frameworks */,
-				0F94B0B1211E343BCA28E209DB5DB14D /* Headers */,
+				24172DB8ECEED30798417F77DDD75AC6 /* Headers */,
+				4D2F31B77B27A73B0BCA7CF1EA08F2B3 /* Sources */,
+				5C6C7834DD09A7B305577A109E9899E8 /* Frameworks */,
+				4CFA8107A106E7484F2B3EF5A909C8B0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -223,346 +219,410 @@
 			);
 			name = TTGEmojiRate;
 			productName = TTGEmojiRate;
-			productReference = 7418957D6F9999D564FA1B2253A58B21 /* TTGEmojiRate.framework */;
+			productReference = 3F737A5D6F2DD8ABCA97030F47B150A1 /* TTGEmojiRate */;
 			productType = "com.apple.product-type.framework";
 		};
-		9A9CC88268544BF4D998578B0D0E0ABF /* Pods-TTGEmojiRateObjcExample */ = {
+		7B6AC4A8F4EE08B4696163322D40EE0F /* Pods-TTGEmojiRateObjcExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AE49B4BAA1B7F847B093D949C0860E9 /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRateObjcExample" */;
+			buildConfigurationList = 0CF07FD13FBBB3B9A9349EB0FF04067C /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRateObjcExample" */;
 			buildPhases = (
-				3F9D338AF6AE85CD2ED4082564A91712 /* Sources */,
-				CD16010608BBA0FC93B15BC4376EE14F /* Frameworks */,
-				2627197CA3EAC5140ED06D3D8C3DFDAC /* Headers */,
+				100671B3C2F23DEE02B3F6D34A3216E1 /* Headers */,
+				6FFF74B73CB96687C2AE30F2C96F983D /* Sources */,
+				C62E68E8262A6BBCFA8C8FD6B241AF8C /* Frameworks */,
+				41ED7CDBED21214D88780D6EACADD7A3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5656011DF59083F123D3CB287ED5F628 /* PBXTargetDependency */,
+				170795002814F4CEBC6113F7C66D3EAD /* PBXTargetDependency */,
 			);
 			name = "Pods-TTGEmojiRateObjcExample";
-			productName = "Pods-TTGEmojiRateObjcExample";
-			productReference = B9B0FA3B3CED9518F3E3BC8BDCFDCCC6 /* Pods_TTGEmojiRateObjcExample.framework */;
+			productName = Pods_TTGEmojiRateObjcExample;
+			productReference = 0ECAC04A056BE88B9C3ECB83022F8552 /* Pods-TTGEmojiRateObjcExample */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					8D972B72367752364C16FEE89642E921 = {
-						LastSwiftMigration = 0800;
-					};
-					9A9CC88268544BF4D998578B0D0E0ABF = {
-						LastSwiftMigration = 0800;
-					};
-				};
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B4DBA0ED95EB7AA61216E899DC365B2D /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3E2807700550BC1F47CB5822CA7E6F93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A9CC88268544BF4D998578B0D0E0ABF /* Pods-TTGEmojiRateObjcExample */,
-				8D972B72367752364C16FEE89642E921 /* TTGEmojiRate */,
+				7B6AC4A8F4EE08B4696163322D40EE0F /* Pods-TTGEmojiRateObjcExample */,
+				649FE8151CEBBA77328FCFD98DFB7108 /* TTGEmojiRate */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		289AB9D27FE40D7FF283563162341AC5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		41ED7CDBED21214D88780D6EACADD7A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDFB3E4F7D6D75FE322CFC0A176F4EBA /* EmojiRateView.swift in Sources */,
-				2BF9B528FD5DB525CEE51FD22D8F06C6 /* Info.plist in Sources */,
-				144C2185212D6416EDD3C261A769AB3A /* TTGEmojiRate-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F9D338AF6AE85CD2ED4082564A91712 /* Sources */ = {
+		4CFA8107A106E7484F2B3EF5A909C8B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D2F31B77B27A73B0BCA7CF1EA08F2B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B4EAC56BF6B184FEBB21FC23E716B1 /* Pods-TTGEmojiRateObjcExample-dummy.m in Sources */,
+				FCF0BFCCA17807E62EDFE1548348FC90 /* EmojiRateView.swift in Sources */,
+				9C8EFD895FC595BAEF5315DF667EA6FA /* TTGEmojiRate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FFF74B73CB96687C2AE30F2C96F983D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAA01C750C948D454BB1F8CD38BAF59 /* Pods-TTGEmojiRateObjcExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5656011DF59083F123D3CB287ED5F628 /* PBXTargetDependency */ = {
+		170795002814F4CEBC6113F7C66D3EAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TTGEmojiRate;
-			target = 8D972B72367752364C16FEE89642E921 /* TTGEmojiRate */;
-			targetProxy = 29233F3668A8374D0DE2F105533563D9 /* PBXContainerItemProxy */;
+			target = 649FE8151CEBBA77328FCFD98DFB7108 /* TTGEmojiRate */;
+			targetProxy = 8DA57E799A9BB03187C7B19CD1BEB51A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+		037BFD3E50F41887DB212038627FDEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DD408FE7EE17B65284C0B10895B98B /* Pods-TTGEmojiRateObjcExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Pods-TTGEmojiRateObjcExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Pods-TTGEmojiRateObjcExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05A7E03E3CE33E88EF98DDD8999D0B39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE5EB4991A45629F81117794F16B8FE /* TTGEmojiRate.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap";
+				PRODUCT_MODULE_NAME = TTGEmojiRate;
+				PRODUCT_NAME = TTGEmojiRate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D105AE7F1556212887B8D8A80024471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4CF0A44192745F93F000A6BE6E7A50 /* TTGEmojiRate.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap";
+				PRODUCT_MODULE_NAME = TTGEmojiRate;
+				PRODUCT_NAME = TTGEmojiRate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15576B6C756D5C6F7D5E2020F32EB5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3152E85AA30480BA5098F002A52CBCB /* Pods-TTGEmojiRateObjcExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Pods-TTGEmojiRateObjcExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Pods-TTGEmojiRateObjcExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		47E2EA1AA3926D4E61164315ADF73917 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16082041936845B7BF7E793CBB373FCB /* Pods-TTGEmojiRateObjcExample.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Pods-TTGEmojiRateObjcExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TTGEmojiRateObjcExample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		549E8766C17523F8B8BC5568B44E1BCE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E82694D4CDA226D875952E81D9822161 /* TTGEmojiRate.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TTGEmojiRate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TTGEmojiRate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A07756A138B8F40BC62BA69AB901BA63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E82694D4CDA226D875952E81D9822161 /* TTGEmojiRate.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TTGEmojiRate/TTGEmojiRate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TTGEmojiRate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TTGEmojiRate/TTGEmojiRate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TTGEmojiRate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BAE846045B392DDBA9F9B36C71872A0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6ABD6D08EB8252D9C88602F33FCBEE1 /* Pods-TTGEmojiRateObjcExample.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TTGEmojiRateObjcExample/Pods-TTGEmojiRateObjcExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TTGEmojiRateObjcExample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0CF07FD13FBBB3B9A9349EB0FF04067C /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRateObjcExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
-				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+				15576B6C756D5C6F7D5E2020F32EB5A2 /* Debug */,
+				037BFD3E50F41887DB212038627FDEFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AE49B4BAA1B7F847B093D949C0860E9 /* Build configuration list for PBXNativeTarget "Pods-TTGEmojiRateObjcExample" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47E2EA1AA3926D4E61164315ADF73917 /* Debug */,
-				BAE846045B392DDBA9F9B36C71872A0E /* Release */,
+				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
+				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D725879612BFAA86EE47769667694D7 /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */ = {
+		56FBE4B3216AF0A1C87D58DE94E9BF68 /* Build configuration list for PBXNativeTarget "TTGEmojiRate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A07756A138B8F40BC62BA69AB901BA63 /* Debug */,
-				549E8766C17523F8B8BC5568B44E1BCE /* Release */,
+				05A7E03E3CE33E88EF98DDD8999D0B39 /* Debug */,
+				0D105AE7F1556212887B8D8A80024471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
